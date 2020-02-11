@@ -9,6 +9,11 @@ fields:
   type: tag_list
   default: []
   label: Tag
+- name: description
+  type: text
+  config:
+    required: false
+  label: Description
 - name: author
   type: select
   default: ''
