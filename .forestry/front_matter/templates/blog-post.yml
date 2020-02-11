@@ -6,8 +6,26 @@ fields:
   name: title
   label: Title
 - name: tag
-  type: tag_list
+  type: select
   default: []
+  config:
+    required: false
+    options:
+    - UFC
+    - NFL
+    - NBA
+    - MARTIAL ARTS
+    - BREAKING
+    - TRENDING
+    - VIDEO
+    - NHL
+    - INTERVIEW
+    - ANALYSIS
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
   label: Tag
 - name: description
   type: text
