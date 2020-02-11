@@ -4,7 +4,7 @@ hide_body: false
 fields:
 - type: text
   name: title
-  label: title
+  label: Title
 - name: author
   type: select
   default: ''
@@ -20,10 +20,10 @@ fields:
   description: Choose author, to add a new author go to the Authors List file
 - type: datetime
   name: date
-  label: date
+  label: Date
 - type: file
   name: hero_image
-  label: hero_image
+  label: Cover
 pages:
 - src/assets/content/blog/an-essay-on-walking.md
 - src/assets/content/blog/ne-te-quaesiveris-extra.md
