@@ -1,5 +1,5 @@
 ---
-title: NATHANIEL WOOD IS READY TO TURN IT UP
+title: Nathaniel Wood is ready to turn it up
 author: Nathan Rapaka
 date: 2020-02-11T02:00:00-06:00
 hero_image: "/src/assets/content/images/Screen Shot 2020-02-11 at 5.11.11 PM.png"
