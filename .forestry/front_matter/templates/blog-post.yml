@@ -24,6 +24,10 @@ fields:
 - type: file
   name: hero_image
   label: Cover
+- name: tag
+  type: tag_list
+  default: []
+  label: Tag
 pages:
 - src/assets/content/blog/an-essay-on-walking.md
 - src/assets/content/blog/ne-te-quaesiveris-extra.md
