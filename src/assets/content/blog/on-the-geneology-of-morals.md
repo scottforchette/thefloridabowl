@@ -1,8 +1,10 @@
 ---
 title: On the Geneology of Morals
-author: Friedrich Nietzsche
-date: 2019-08-19T07:00:00Z
+author: Nathan Rapaka
+date: 2019-08-19T07:00:00.000+00:00
 hero_image: "/src/assets/content/images/jj-ying-7JX0-bfiuxQ-unsplash.jpg"
+tag: UFC
+description: Read the UFC Rio Rancho feature on UFC bantamweight Nathaniel Wood
 
 ---
 So all respect to the good spirits that may govern in these historians of morality! But it’s certainly a pity that they lack the historical spirit itself, that they’ve been left in the lurch by all the good spirits of history! Collectively they all think essentially unhistorically, in the traditional manner of philosophers. Of that there is no doubt. The incompetence of their genealogies of morals reveals itself at the very beginning, where the issue is to determine the origin of the idea and of the judgment “good.”
