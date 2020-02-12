@@ -1,5 +1,5 @@
 {
-  "name": "ST",
+  "name": "US",
   "private": true,
   "scripts": {
     "build": "gridsome build",

@@ -393,7 +393,7 @@ query getPostData ($path: String!) {
       font-size: 1.90476vw;
       line-height: 2.85714vw;
       letter-spacing: -0.02976vw;
-      margin: 6.54762vw 0;
+      margin: 3vw 0 6.54762vw 0;
     }
   }
 

@@ -22,7 +22,7 @@ module.exports = {
         collections: [{
           typeName: 'Blog',
           indexName: 'Blog',
-          fields: ['title', 'handle', 'author', 'date']
+          fields: ['title', 'handle', 'author', 'date', 'tag']
         }],
         searchFields: ['title']
       }

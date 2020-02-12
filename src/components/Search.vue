@@ -1,6 +1,6 @@
 <template>
   <div id="search">
-    <div id="search-bg" @click.prevent="toggle"></div>
+    <div id="search-bg" class="open" @click.prevent="toggle"></div>
     <div id="search-wrap" class="open">
       <div id="search-inner">
         <div id="search-close"></div>
@@ -10,7 +10,7 @@
             <g-link :to="result.path" class="navbar-item">
               <div class="meta">
                 <div class="tag">
-                  <span>Destination</span>
+                  <span>{{ result.tag }}</span>
                 </div>
                 <div class="date">
                   <timeago :since="result.date" :datetime="result.date"></timeago>
@@ -51,9 +51,9 @@ export default {
   },
   watch: {
     $route(to, from) {
-      this.searchTerm = ""; 
+      this.searchTerm = "";  
 
-      
+      console.log('left')
     }
   },
   methods: {
@@ -168,8 +168,7 @@ textarea {
 }
 
 [type="search"] {
-  -webkit-appearance: textfield;
-  outline-offset: -2px;
+  -webkit-appearance: textfield; 
 }
 
 button,
@@ -205,7 +204,7 @@ input {
 
     input {
       padding: 0.5vw 0;
-      margin: 0 0 4vw;
+      margin: 0 0 2vw;
     }
 
     li {

@@ -9,9 +9,10 @@ export default function (Vue, {
   Vue.component('Layout', DefaultLayout)
 
   router.afterEach((to, from) => {
-    if (process.isClient)
-    document.documentElement.removeAttribute("style");
-  }) 
+    if (process.isClient) {
+      document.documentElement.removeAttribute("style");
+    }
+  })
 
   Vue.use(VueTimeago, {
     name: 'timeago',
