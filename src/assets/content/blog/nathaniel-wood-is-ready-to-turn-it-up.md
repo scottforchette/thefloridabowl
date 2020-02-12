@@ -1,10 +1,12 @@
 ---
-title: Nathaniel Wood is ready to turn it up
-author: Nathan Rapaka
+title: Get me outta here! 32 NFL players who need a change of scenery
+author: Scott Forchette
 date: 2020-02-11T08:00:00.000+00:00
-hero_image: "/src/assets/content/images/Screen Shot 2020-02-11 at 5.11.11 PM.png"
-tag: UFC
-description: Read the UFC Rio Rancho feature on UFC bantamweight Nathaniel Wood
+hero_image: "/src/assets/content/images/i.jpg"
+tag: NFL
+description: Sometimes you just need to go somewhere new. For high-priced QBs such
+  as Derek Carr, Cam Newton and Nick Foles, playing for a new team in 2020 could make
+  a lot of sense.
 
 ---
 # Nathaniel Wood is not one to look past any opponent, but the bantamweight up and comer does want to put it out there that should all go well in New Mexico when he faces John Dodson this weekend, he wouldn’t mind getting a spot on next month’s card in his hometown of London.
