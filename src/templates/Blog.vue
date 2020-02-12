@@ -39,7 +39,7 @@
           <div id="post-0-header">
             <div class="meta">
               <div class="tag">
-                <span>Destination</span>
+                <span>{{ $page.post.tag }}</span>
               </div>
               <div class="date">
                 <timeago :since="$page.post.date" :datetime="$page.post.date"></timeago>
@@ -84,7 +84,7 @@
               <g-link :to="post.node.path">
                 <div class="meta">
                   <div class="tag">
-                    <span>Destination</span>
+                    <span>{{post.node.tag }}</span>
                   </div>
                   <div class="date">
                     <timeago :since="post.node.date" :datetime="post.node.date"></timeago>
@@ -231,6 +231,8 @@ query getPostData ($path: String!) {
         author
         content
         path
+        tag
+        description
         hero_image (quality: 80)
     }
     all: allBlog {
@@ -255,6 +257,7 @@ query getPostData ($path: String!) {
                 path
                 title
                 author
+                tag
                 date  (format: "MMMM DD YYYY")
             }
             previous {
