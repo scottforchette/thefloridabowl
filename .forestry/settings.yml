@@ -8,8 +8,8 @@ sections:
   label: Content
 - type: directory
   path: src/assets/content/blog
-  label: Blog Posts
-  create: documents
+  label: Posts
+  create: all
   match: "**/*"
   templates:
   - blog-post
