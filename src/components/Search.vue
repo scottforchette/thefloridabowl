@@ -39,21 +39,21 @@ export default {
   }),
   computed: {
     searchResults() {
-      if (!this.$search) return [];
-      const searchTerm = this.searchTerm;
-      if (searchTerm.length < 2) return [];
-      return this.$search.search({
-        query: searchTerm,
-        limit: 8,
-        suggest: true
-      });
+      var searchTerm = this.searchTerm;
+      if (searchTerm.length > 1) {
+        return this.$search.search({
+          query: searchTerm,
+          limit: 8,
+          suggest: true
+        });
+      }
     }
   },
   watch: {
     $route(to, from) {
-      this.searchTerm = "";  
-
-      console.log('left')
+      this.searchTerm = "";
+      this.state = false;
+      console.log('hi')
     }
   },
   methods: {
@@ -168,7 +168,7 @@ textarea {
 }
 
 [type="search"] {
-  -webkit-appearance: textfield; 
+  -webkit-appearance: textfield;
 }
 
 button,

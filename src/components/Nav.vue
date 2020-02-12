@@ -104,17 +104,12 @@ export default {
 }
 
 #nav-burger,
-#nav-mode {
-  height: 100%;
+#nav-mode { 
   display: flex;
   flex-direction: column;
   justify-content: center;
   cursor: pointer;
-}
-
-#nav-mode {
-  color: #fff;
-}
+} 
 
 #nav-burger {
   span {
