@@ -1,7 +1,7 @@
 <template>
   <div id="search">
     <div id="search-bg" @click.prevent="toggle"></div>
-    <div id="search-wrap">
+    <div id="search-wrap" class="open">
       <div id="search-inner">
         <div id="search-close"></div>
         <input v-model="searchTerm" type="text" placeholder="Search" />
