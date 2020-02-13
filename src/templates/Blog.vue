@@ -10,7 +10,12 @@
           </aside>
           <div id="post-0-wrap">
             <div id="post-0-video">
-              <g-image :src="$page.post.hero_image" :alt="$page.post.title"></g-image>
+              <div id="post-0-video-wrap">
+                <video :src="$page.post.video"/>
+              </div>
+              <div id="post-0-video-poster">
+                <g-image :src="$page.post.hero_image" :alt="$page.post.title"></g-image>
+              </div>
             </div>
             <div id="post-0-next-prev">
               <g-link :to="prev">
@@ -230,6 +235,7 @@ query getPostData ($path: String!) {
         date 
         author
         content
+        
         path
         tag
         description
@@ -279,6 +285,13 @@ query getPostData ($path: String!) {
 #post-0-video {
   position: relative;
   overflow: hidden;
+
+  img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
 }
 
 #post-0-next-prev,
@@ -383,7 +396,7 @@ query getPostData ($path: String!) {
     padding: 0 24vw 10vw 0;
 
     p {
-      margin: 0 0 2vw; 
+      margin: 0 0 2vw;
       line-height: 2.02381vw;
     }
 
@@ -403,13 +416,13 @@ query getPostData ($path: String!) {
   #post-0-next-prev,
   #post-1-next-prev {
     width: 9vw;
-    margin: 0 0 0 auto; 
+    margin: 0 0 0 auto;
   }
 
   #post-0-next-prev,
   #post-1-next-prev {
     width: 9vw;
-    margin: 0 0 0 auto; 
+    margin: 0 0 0 auto;
   }
 
   #post-0-next-prev {
@@ -422,8 +435,7 @@ query getPostData ($path: String!) {
     padding: 0 0 1vw;
   }
 
-  .aside-meta { 
-
+  .aside-meta {
     li {
       padding: 0 0 2.4vw;
 
@@ -439,12 +451,12 @@ query getPostData ($path: String!) {
 
   #post-1-share {
     justify-content: space-between;
-    a {  
+    a {
       margin: 0 3vw 0 0;
     }
   }
 
-  .related-author { 
+  .related-author {
     line-height: 1;
   }
 }
@@ -480,7 +492,7 @@ query getPostData ($path: String!) {
 
       span,
       time {
-        font-size: 4.2vw;  
+        font-size: 4.2vw;
       }
     }
   }
