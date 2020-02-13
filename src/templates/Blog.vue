@@ -9,11 +9,11 @@
             </div>
           </aside>
           <div id="post-0-wrap">
-            <div id="post-0-video">
-              <div id="post-0-video-wrap">
-                <video :src="$page.post.video"/>
+            <div id="post-0-media">
+              <div id="post-0-video-wrap" v-if="$page.post.video">
+                <video :src="$page.post.video" controls preload="none"/>
               </div>
-              <div id="post-0-video-poster">
+              <div id="post-0-media-poster">
                 <g-image :src="$page.post.hero_image" :alt="$page.post.title"></g-image>
               </div>
             </div>
@@ -235,7 +235,7 @@ query getPostData ($path: String!) {
         date 
         author
         content
-        
+        video
         path
         tag
         description
@@ -265,13 +265,7 @@ query getPostData ($path: String!) {
                 author
                 tag
                 date  (format: "MMMM DD YYYY")
-            }
-            previous {
-              path
-            }
-            next {
-                path
-            }
+            } 
         }
     }
 }
@@ -282,16 +276,16 @@ query getPostData ($path: String!) {
   position: relative;
 }
 
-#post-0-video {
+#post-0-media {
   position: relative;
   overflow: hidden;
 
-  img {
+  img, video {
     position: absolute;
     height: 100%;
     width: 100%;
     object-fit: cover;
-  }
+  } 
 }
 
 #post-0-next-prev,
@@ -408,7 +402,7 @@ query getPostData ($path: String!) {
     }
   }
 
-  #post-0-video {
+  #post-0-media {
     height: 35vw;
     width: 75vw;
   }
@@ -566,7 +560,7 @@ query getPostData ($path: String!) {
     margin: 0 0 3vw;
   }
 
-  #post-0-video {
+  #post-0-media {
     height: 70vw;
     width: 100%;
   }
