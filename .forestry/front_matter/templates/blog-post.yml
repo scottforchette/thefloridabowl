@@ -32,6 +32,11 @@ fields:
   config:
     required: false
   label: Description
+- name: video
+  type: text
+  config:
+    required: false
+  label: Video Url
 - name: author
   type: select
   default: ''
