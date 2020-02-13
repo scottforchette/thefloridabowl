@@ -1,10 +1,11 @@
 ---
 title: Nathaniel Wood is ready to turn it up
 author: Nathan Rapaka
-date: 2020-02-11T02:00:00-06:00
+date: 2020-02-11T08:00:00.000+00:00
 hero_image: "/src/assets/content/images/Screen Shot 2020-02-11 at 5.11.11 PM.png"
-tag: UFC
+tag: MARTIAL ARTS
 description: Read the UFC Rio Rancho feature on UFC bantamweight Nathaniel Wood
+video: https://interactive-examples.mdn.mozilla.net/media/examples/flower.mp4
 
 ---
 # Nathaniel Wood is not one to look past any opponent, but the bantamweight up and comer does want to put it out there that should all go well in New Mexico when he faces John Dodson this weekend, he wouldn’t mind getting a spot on next month’s card in his hometown of London.
