@@ -86,8 +86,7 @@ body {
     border: 1px solid var(--body-color);
 
     span {
-        text-transform: uppercase;
-        line-height: 1;
+        text-transform: uppercase; 
     }
 
     @media (min-width: 501px) {

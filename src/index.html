@@ -1,11 +1,39 @@
 <!DOCTYPE html>
 <html ${htmlAttrs}>
+
 <head>
     ${head}
 </head>
+
 <body ${bodyAttrs}>
-    <script>!function(){function t(e){window.__theme=e,n=e,document.body.setAttribute("class",e),window.__onThemeChange(e)}var n;window.__onThemeChange=function(){};try{n=localStorage.getItem("theme")}catch(t){}window.__setPreferredTheme=function(e){t(e);try{localStorage.setItem("theme",e)}catch(e){}};var e=window.matchMedia("(prefers-color-scheme: dark)");e.addListener(function(e){window.__setPreferredTheme(e.matches?"dark":"light")}),t(n||(e.matches?"dark":"light"))}();</script>
+    <script>
+        ! function () {
+            function t(e) {
+                window.__theme = e, n = e,
+                    document.body.setAttribute("class", e);
+            }
+            var n;
+            n = localStorage.getItem("theme");
+
+            window.__setPreferredTheme = function (e) {
+                t(e);
+                localStorage.setItem("theme", e);
+            };
+
+            var e = window.matchMedia("(prefers-color-scheme: dark)");
+
+            e.addListener(function (e) {
+                    window.__setPreferredTheme(e.matches ? "dark" : "light")
+                }),
+                t(n || (e.matches ? "dark" : "light"))
+        }();
+    </script>
     ${app}
+    <noscript>
+        <div id="no-js">
+            <div>This app works best with JavaScript enabled.</div>
+        </div>
+    </noscript>
     ${scripts}
 </body>
 

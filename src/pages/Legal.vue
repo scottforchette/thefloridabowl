@@ -97,9 +97,7 @@ export default {
     padding: 5vw 18vw 5vw 0;
 
     p {
-      margin: 0 0 2vw;
-      font-size: 1.2vw;
-      letter-spacing: -0.01vw;
+      margin: 0 0 2vw; 
       line-height: 2.02381vw;
     }
   }

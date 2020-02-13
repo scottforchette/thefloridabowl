@@ -74,16 +74,9 @@
     }
   }
 
-  .footer-bottom {
-    font-size: 1.2vw;
-    letter-spacing: -0.01vw;
+  .footer-bottom { 
     line-height: 1;
-  }
-
-  .link {
-    font-size: 1.2vw;
-    letter-spacing: -0.01vw;
-  }
+  } 
 }
 
 @media (max-width: 500px) {
@@ -110,13 +103,11 @@
   }
 
   .link {
-    font-size: 4.27vw;
-    letter-spacing: -0.01vw;
+    font-size: 4.27vw; 
   }
 
   .footer-bottom {
-    font-size: 4.27vw;
-    letter-spacing: -0.01vw;
+    font-size: 4.27vw; 
     line-height: 1;
 
     a {

@@ -564,8 +564,7 @@ export default {
 
 .index-m-title {
   @media (min-width: 501px) {
-    font-size: 1.6vw;
-    letter-spacing: -0.01vw;
+    font-size: 1.6vw; 
     line-height: 1.3;
     margin: 0 0 1.4vw;
   }

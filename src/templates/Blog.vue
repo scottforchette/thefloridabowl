@@ -383,9 +383,7 @@ query getPostData ($path: String!) {
     padding: 0 24vw 10vw 0;
 
     p {
-      margin: 0 0 2vw;
-      font-size: 1.2vw;
-      letter-spacing: -0.01vw;
+      margin: 0 0 2vw; 
       line-height: 2.02381vw;
     }
 
@@ -405,23 +403,13 @@ query getPostData ($path: String!) {
   #post-0-next-prev,
   #post-1-next-prev {
     width: 9vw;
-    margin: 0 0 0 auto;
-
-    a {
-      font-size: 1.2vw;
-      letter-spacing: -0.01vw;
-    }
+    margin: 0 0 0 auto; 
   }
 
   #post-0-next-prev,
   #post-1-next-prev {
     width: 9vw;
-    margin: 0 0 0 auto;
-
-    a {
-      font-size: 1.2vw;
-      letter-spacing: -0.01vw;
-    }
+    margin: 0 0 0 auto; 
   }
 
   #post-0-next-prev {
@@ -434,13 +422,7 @@ query getPostData ($path: String!) {
     padding: 0 0 1vw;
   }
 
-  .aside-meta {
-    span,
-    time {
-      font-size: 1.2vw;
-      letter-spacing: -0.01vw;
-      line-height: 1;
-    }
+  .aside-meta { 
 
     li {
       padding: 0 0 2.4vw;
@@ -457,16 +439,12 @@ query getPostData ($path: String!) {
 
   #post-1-share {
     justify-content: space-between;
-    a {
-      font-size: 1.2vw;
-      letter-spacing: -0.01vw;
+    a {  
       margin: 0 3vw 0 0;
     }
   }
 
-  .related-author {
-    font-size: 1.2vw;
-    letter-spacing: -0.01vw;
+  .related-author { 
     line-height: 1;
   }
 }
@@ -502,9 +480,7 @@ query getPostData ($path: String!) {
 
       span,
       time {
-        font-size: 4.2vw;
-        letter-spacing: -0.01vw;
-        line-height: 1;
+        font-size: 4.2vw;  
       }
     }
   }

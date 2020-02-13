@@ -4,8 +4,11 @@
       <slot />
       <Footer />
     </div>
-    <Nav ref="nav"/>
-    <Search ref="search" />
+    <Nav />
+    <Search />
+
+    
+
     <div id="issue">Please turn your device.</div>
   </main>
 </template>
@@ -113,13 +116,23 @@ svg {
 }
 
 html {
-  font: 16px Graphik, Helvetica, Arial, sans-serif;
+  font-family: Graphik, Helvetica;
   cursor: default;
   -webkit-tap-highlight-color: transparent;
+  letter-spacing: -0.01vw;
+      line-height: 1;
+
+  @media (min-width: 501px) {
+    font-size: 1.2vw; 
+  }
+
+  @media (max-width: 500px) {
+    font-size: 4.27vw; 
+  }
 }
 
+#no-js,
 #issue {
-  display: none;
   position: fixed;
   top: 0;
   width: 100%;
@@ -128,8 +141,26 @@ html {
   color: #fff;
   align-items: center;
   justify-content: center;
-  font-size: 2.7vw;
-  letter-spacing: -0.03vw;
+}
+
+#no-js {
+  z-index: 9998;
+  text-align: center;
+
+  > div {
+    position: absolute;
+    top: 47%;
+    left: 0;
+    width: 100%;
+  }
+
+  @media (min-width: 501px) {
+    font-size: 1.8vw; 
+  }
+}
+
+#issue {
+  display: none;
 
   @media (max-height: 420px) and (max-width: 900px) {
     display: flex;
@@ -138,11 +169,11 @@ html {
 
 #page {
   @media (min-width: 501px) {
-    margin: 6.25vw 0 0;
+    padding: 6.25vw 0 0;
   }
 
   @media (max-width: 500px) {
-    margin: 15vw 0 0;
+    padding: 15vw 0 0;
   }
 }
 </style>

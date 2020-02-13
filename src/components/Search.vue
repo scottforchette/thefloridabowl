@@ -1,12 +1,18 @@
 <template>
   <div id="search">
-    <div id="search-bg" class="open" @click.prevent="toggle"></div>
-    <div id="search-wrap" class="open">
+    <div id="search-bg" @click.prevent="close"></div>
+    <div id="search-wrap">
       <div id="search-inner">
-        <div id="search-close"></div>
+        <div id="search-close" @click.prevent="close">
+          <svg viewBox="0 0 12 12">
+            <polygon
+              points="11.7,1.1 10.9,0.3 6,5.3 1.1,0.3 0.3,1.1 5.3,6 0.3,10.9 1.1,11.7 6,6.7 10.9,11.7 11.7,10.9 6.7,6"
+            />
+          </svg>
+        </div>
         <input v-model="searchTerm" type="text" placeholder="Search" />
         <ul>
-          <li v-for="result in searchResults" :key="result.id">
+          <li v-for="result in search" :key="result.id">
             <g-link :to="result.path" class="navbar-item">
               <div class="meta">
                 <div class="tag">
@@ -19,7 +25,6 @@
               <div class="search-headline">
                 <h2>{{ result.title }}</h2>
               </div>
-
               <div class="search-author">
                 <span>{{ result.author }}</span>
               </div>
@@ -34,11 +39,10 @@
 <script>
 export default {
   data: () => ({
-    searchTerm: "",
-    state: false
+    searchTerm: ""
   }),
   computed: {
-    searchResults() {
+    search() {
       var searchTerm = this.searchTerm;
       if (searchTerm.length > 1) {
         return this.$search.search({
@@ -52,8 +56,7 @@ export default {
   watch: {
     $route(to, from) {
       this.searchTerm = "";
-      this.state = false;
-      console.log('hi')
+      this.close();
     }
   },
   methods: {
@@ -61,7 +64,6 @@ export default {
       this.bg = document.getElementById("search-bg");
       this.side = document.getElementById("search-wrap");
       this.html = document.documentElement;
-      this.state = true;
       this.bg.classList.add("open");
       this.side.classList.add("open");
       this.html.style.overflow = "hidden";
@@ -70,18 +72,15 @@ export default {
       this.bg = document.getElementById("search-bg");
       this.side = document.getElementById("search-wrap");
       this.html = document.documentElement;
-      this.state = false;
       this.bg.classList.remove("open");
       this.side.classList.remove("open");
       this.html.removeAttribute("style");
-    },
-    toggle() {
-      if ((this.state = true)) {
-        this.close();
-      } else {
-        this.open();
-      }
     }
+  },
+  mounted() {
+    this.$root.$on("message from abc", () => {
+      this.open();
+    });
   }
 };
 </script>
@@ -131,8 +130,7 @@ export default {
     width: 40vw;
 
     input {
-      font-size: 1.6vw;
-      letter-spacing: -0.01vw;
+      font-size: 1.6vw; 
       line-height: 1.3;
     }
   }
@@ -147,6 +145,11 @@ export default {
     justify-content: center;
     transition: border-color 0.6s;
     border-bottom: 1px solid var(--border-color);
+  }
+
+  ul {
+    overflow: auto;
+    height: 100%;
   }
 }
 
@@ -185,6 +188,21 @@ input {
   display: block;
 }
 
+#search-close {
+  position: absolute;
+  top: 2.1875vw;
+  right: 0;
+  padding: 2.125vw;
+  width: 5.75vw;
+  height: 5.75vw;
+  cursor: pointer;
+}
+
+svg {
+  width: 100%;
+  height: 100%;
+}
+
 @media (min-width: 501px) {
   .search-headline {
     font-size: 2.5vw;
@@ -193,9 +211,7 @@ input {
     margin: 1vw 0 0.75vw;
   }
 
-  .search-author {
-    font-size: 1.2vw;
-    letter-spacing: -0.01vw;
+  .search-author { 
     line-height: 1;
   }
 
@@ -221,9 +237,7 @@ input {
     margin: 1vw 0 0.75vw;
   }
 
-  .search-author {
-    font-size: 1.2vw;
-    letter-spacing: -0.01vw;
+  .search-author { 
     line-height: 1;
   }
 
@@ -256,8 +270,7 @@ input {
   }
 
   .search-author {
-    font-size: 4.2vw;
-    letter-spacing: -0.01vw;
+    font-size: 4.2vw; 
     line-height: 1;
   }
 }

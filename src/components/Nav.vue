@@ -15,7 +15,7 @@
         </div>
       </div>
       <div id="nav-1">
-        <div id="nav-search">
+        <div id="nav-search" @click.prevent="sendMessage">
           <div>search</div>
         </div>
         <div id="nav-mode" @click.prevent="toggleMode">
@@ -62,6 +62,9 @@ export default {
       } else {
         this.open();
       }
+    },
+    sendMessage() {
+      this.$root.$emit('message from abc')
     }
   },
   mounted() {
