@@ -13,6 +13,8 @@ sections:
   match: "**/*"
   templates:
   - blog-post
+- type: heading
+  label: Authors
 - type: document
   path: src/assets/content/data/authors.json
   label: Authors List
