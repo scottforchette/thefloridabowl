@@ -11,7 +11,7 @@
           <div id="post-0-wrap">
             <div id="post-0-media">
               <div id="post-0-video-wrap" v-if="$page.post.video">
-                <video :src="$page.post.video" controls preload="none"/>
+                <video :src="$page.post.video" controls preload="none" />
               </div>
               <div id="post-0-media-poster">
                 <g-image :src="$page.post.hero_image" :alt="$page.post.title"></g-image>
@@ -280,12 +280,13 @@ query getPostData ($path: String!) {
   position: relative;
   overflow: hidden;
 
-  img, video {
+  img,
+  video {
     position: absolute;
     height: 100%;
     width: 100%;
     object-fit: cover;
-  } 
+  }
 }
 
 #post-0-next-prev,
@@ -318,6 +319,11 @@ query getPostData ($path: String!) {
   }
 }
 
+#post-1-content {
+  a {
+    color: #21ce99;
+  }
+}
 .aside-author,
 .aside-date,
 .aside-source,
