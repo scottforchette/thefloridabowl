@@ -521,7 +521,7 @@ export default {
 }
 
 .index-m-info {
-  opacity: 0.6;
+  opacity: 0.7;
   line-height: 1;
 
   @media (min-width: 501px) {

@@ -293,12 +293,12 @@ query getPostData ($path: String!) {
 #post-1-next-prev {
   display: flex;
   justify-content: space-between;
-  opacity: 0.6;
+  opacity: 0.7;
 }
 
 #post-1-share {
   display: flex;
-  opacity: 0.6;
+  opacity: 0.7;
 
   a {
     cursor: pointer;
@@ -328,7 +328,7 @@ query getPostData ($path: String!) {
 .aside-date,
 .aside-source,
 .related-author {
-  opacity: 0.6;
+  opacity: 0.7;
   display: block;
 }
 

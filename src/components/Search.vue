@@ -10,7 +10,7 @@
             />
           </svg>
         </div>
-        <input v-model="searchTerm" type="text" autocomplete="off" placeholder="Search" />
+        <input v-model="searchTerm" type="text" autocomplete="off" placeholder="Search" aria-label="Search"/>
         <ul>
           <li v-for="result in search" :key="result.id">
             <g-link :to="result.path">
@@ -184,7 +184,7 @@ input {
 }
 
 .search-author {
-  opacity: 0.6;
+  opacity: 0.7;
   display: block;
 }
 
