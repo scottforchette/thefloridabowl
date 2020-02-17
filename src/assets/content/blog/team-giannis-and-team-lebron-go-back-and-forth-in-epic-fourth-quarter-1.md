@@ -1,12 +1,12 @@
 ---
 location: Watch
-tag: TRENDING
+tag: VIDEO
 featured: false
-title: Team Giannis and Team LeBron go back and forth in epic fourth quarter
+title: Can I Interest You In Watching The Perfect Possession In ...
 description: Read the UFC Rio Rancho feature on UFC bantamweight Nathaniel Wood
 video_url: ''
 author: Scott Forchette
-date: 2020-02-17T00:00:00-06:00
+date: 2020-02-10T00:00:00-06:00
 hero_image: "/src/assets/content/images/i-2.jpg"
 
 ---
