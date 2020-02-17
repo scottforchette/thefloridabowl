@@ -3,7 +3,7 @@ title: This New Kevin Garnett Basketball Documentary Is Going To...
 author: Nathan Rapaka
 date: 2020-01-04T02:00:00-06:00
 hero_image: "/src/assets/content/images/jj-ying-7JX0-bfiuxQ-unsplash.jpg"
-tag: UFC
+tag: NBA
 description: Read the UFC Rio Rancho feature on UFC bantamweight Nathaniel Wood
 location: Content
 featured: false
