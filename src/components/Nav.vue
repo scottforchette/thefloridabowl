@@ -174,8 +174,7 @@ export default {
   font-weight: 500;
 
   @media (min-width: 501px) {
-    font-size: 1.7vw;
-    letter-spacing: -0.05vw;
+    font-size: 1.7vw; 
   }
 }
 
@@ -188,8 +187,7 @@ export default {
     margin: 0 0 0 3vw;
 
     a {
-      font-size: 1.7vw;
-      letter-spacing: -0.05vw;
+      font-size: 1.7vw; 
     }
   }
 
@@ -197,8 +195,7 @@ export default {
     margin: 0 0 0 6vw;
 
     a {
-      font-size: 5.1vw;
-      letter-spacing: -0.06vw;
+      font-size: 5.1vw; 
     }
   }
 }

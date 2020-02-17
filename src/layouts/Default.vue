@@ -105,8 +105,7 @@ html {
     "Ubuntu", "Cantarell", "Fira Sans",
     "Droid Sans", "Helvetica Neue", sans-serif;
   cursor: default;
-  -webkit-tap-highlight-color: transparent;
-  letter-spacing: -0.01vw;
+  -webkit-tap-highlight-color: transparent; 
   line-height: 1;
   @media (max-width: 500px) {
     font-size: 4.27vw;

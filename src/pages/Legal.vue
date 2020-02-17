@@ -128,8 +128,7 @@ export default {
     padding: 0 6vw 6vw 2.75vw;
 
     h2 {
-      font-size: 1.4vw;
-      letter-spacing: -0.04vw;
+      font-size: 1.4vw; 
     }
   }
 
@@ -141,8 +140,7 @@ export default {
     }
 
     .legal-headline {
-      font-size: 3vw;
-      letter-spacing: -0.1vw;
+      font-size: 3vw; 
       line-height: 1.12;
       margin: 0 0 0.75vw;
     }
@@ -169,8 +167,7 @@ export default {
 
   #legal-1-wrap {
     h2 {
-      font-size: 7vw;
-      letter-spacing: -0.1vw;
+      font-size: 7vw; ;
       margin: 0 0 8.5vw;
     }
   }
@@ -192,8 +189,7 @@ export default {
   }
 
   .legal-headline {
-    font-size: 7vw;
-    letter-spacing: -0.09vw;
+    font-size: 7vw; 
     line-height: 1.3;
     margin: 0 0 3vw;
   }

@@ -206,8 +206,7 @@ input {
 
 @media (min-width: 501px) {
   .search-headline {
-    font-size: 2.5vw;
-    letter-spacing: -0.05vw;
+    font-size: 2.5vw; 
     line-height: 1.3;
     margin: 1vw 0 0.75vw;
   }
@@ -232,8 +231,7 @@ input {
 
 @media (max-width: 500px) {
   .search-headline {
-    font-size: 2.5vw;
-    letter-spacing: -0.05vw;
+    font-size: 2.5vw; 
     line-height: 1.3;
     margin: 1vw 0 0.75vw;
   }
@@ -244,8 +242,7 @@ input {
 
   #search-wrap {
     input {
-      font-size: 5.6vw;
-      letter-spacing: -0.05vw;
+      font-size: 5.6vw; 
       line-height: 1.3;
     }
   }
@@ -264,8 +261,7 @@ input {
   }
 
   .search-headline {
-    font-size: 7vw;
-    letter-spacing: -0.09vw;
+    font-size: 7vw;  
     line-height: 1.3;
     margin: 0 0 3vw;
   }

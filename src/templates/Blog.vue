@@ -381,8 +381,7 @@ query getPostData ($path: String!) {
     width: 84vw;
 
     .related-headline {
-      font-size: 3vw;
-      letter-spacing: -0.1vw;
+      font-size: 3vw; 
       line-height: 1.12;
       margin: 1vw 0 0.75vw;
     }
@@ -402,8 +401,7 @@ query getPostData ($path: String!) {
 
     h1 {
       font-size: 1.90476vw;
-      line-height: 2.85714vw;
-      letter-spacing: -0.02976vw;
+      line-height: 2.85714vw; 
       margin: 3vw 0 6.54762vw 0;
     }
   }
@@ -537,8 +535,7 @@ query getPostData ($path: String!) {
 
     h1 {
       font-size: 6.28019vw;
-      line-height: 9.66184vw;
-      letter-spacing: -0.07246vw;
+      line-height: 9.66184vw; 
       margin: 10.54762vw 0;
     }
   }
@@ -560,8 +557,7 @@ query getPostData ($path: String!) {
   }
 
   .related-headline {
-    font-size: 7vw;
-    letter-spacing: -0.09vw;
+    font-size: 7vw; 
     line-height: 1.3;
     margin: 0 0 3vw;
   }

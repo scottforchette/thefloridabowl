@@ -450,8 +450,7 @@ export default {
       margin: 2.75vw 0 2vw;
 
       h1 {
-        font-size: 3.5vw;
-        letter-spacing: -0.15vw;
+        font-size: 3.5vw; 
         line-height: 1.12;
       }
     }
@@ -472,8 +471,7 @@ export default {
       margin: 0 0 6vw;
 
       h1 {
-        font-size: 8.5vw;
-        letter-spacing: -0.5vw;
+        font-size: 8.5vw; 
         line-height: 1.12;
       }
     }
@@ -510,12 +508,13 @@ export default {
   @media (min-width: 501px) {
     font-size: 1.6vw;
     line-height: 1.3;
+    letter-spacing: 0.04vw;
     margin: 0 0 1.4vw;
   }
 
   @media (max-width: 500px) {
     font-size: 5vw;
-    letter-spacing: -0.09vw;
+    letter-spacing: 0.09vw;
     line-height: 1.3;
     margin: 0 0 3vw;
   }
@@ -526,14 +525,12 @@ export default {
   line-height: 1;
 
   @media (min-width: 501px) {
-    font-size: 1.2vw;
-    letter-spacing: -0.01vw;
+    letter-spacing: 0.03vw;
+    font-size: 1.2vw; 
   }
 
   @media (max-width: 500px) {
-    font-size: 4.27vw;
-    letter-spacing: -0.01vw;
-    line-height: 1;
+    font-size: 4.27vw;  
   }
 }
 

@@ -53,6 +53,7 @@ export default {
   #error-wrap a {
     padding: 1.6vw 1.2vw;
     width: 19vw;
+    margin: 0 auto;
 
     span {
       font-size: 1.2vw;
@@ -60,9 +61,9 @@ export default {
   }
 
   #error-0 {
-    font-size: 2.5vw;
-    letter-spacing: -0.05vw;
+    font-size: 4.5vw;
     line-height: 1.4;
+    text-align: center;
     margin: 0 0 3vw;
   }
 }
@@ -78,8 +79,7 @@ export default {
   }
 
   #error-0 {
-    font-size: 12vw;
-    letter-spacing: -0.5vw;
+    font-size: 12vw; 
     line-height: 1.12;
     margin: 0 0 7vw;
   }
