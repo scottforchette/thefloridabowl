@@ -6,6 +6,9 @@ hero_image: "/src/assets/content/images/ren-ran-bBiuSdck8tU-unsplash.jpg"
 tag: NFL
 description: Read the UFC Rio Rancho feature on UFC bantamweight Nathaniel Wood
 video: https://interactive-examples.mdn.mozilla.net/media/examples/flower.mp4
+location: Watch
+featured: true
+video_url: ''
 
 ---
 I have heard what the talkers were talking, the talk of the  
