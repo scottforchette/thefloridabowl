@@ -10,11 +10,7 @@
             />
           </svg>
         </div>
-        <input 
-        v-model="searchTerm" 
-        type="text" 
-        autocomplete="off"
-        placeholder="Search" />
+        <input v-model="searchTerm" type="text" autocomplete="off" placeholder="Search" />
         <ul>
           <li v-for="result in search" :key="result.id">
             <g-link :to="result.path">
@@ -134,7 +130,7 @@ export default {
     width: 40vw;
 
     input {
-      font-size: 1.6vw; 
+      font-size: 1.6vw;
       line-height: 1.3;
     }
   }
@@ -200,11 +196,12 @@ input {
   width: 5.75vw;
   height: 5.75vw;
   cursor: pointer;
-}
 
-svg {
-  width: 100%;
-  height: 100%;
+  svg {
+    fill: var(--body-color);
+    width: 100%;
+    height: 100%;
+  }
 }
 
 @media (min-width: 501px) {
@@ -215,7 +212,7 @@ svg {
     margin: 1vw 0 0.75vw;
   }
 
-  .search-author { 
+  .search-author {
     line-height: 1;
   }
 
@@ -241,7 +238,7 @@ svg {
     margin: 1vw 0 0.75vw;
   }
 
-  .search-author { 
+  .search-author {
     line-height: 1;
   }
 
@@ -274,7 +271,7 @@ svg {
   }
 
   .search-author {
-    font-size: 4.2vw; 
+    font-size: 4.2vw;
     line-height: 1;
   }
 }

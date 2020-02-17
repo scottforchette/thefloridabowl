@@ -7,29 +7,23 @@
             <h2>Featured</h2>
           </div>
         </aside>
-        <div id="index-0-wrap">
-          <g-link id="index-featured" to="/">
-            <g-image src="~/assets/media/0.png" alt />
+        <div id="index-0-wrap" v-for="edge in $page.featured.edges" :key="edge.node.id">
+          <g-link id="index-featured" :to="edge.node.path">
+            <g-image :src="edge.node.hero_image" :alt="edge.node.title" />
           </g-link>
           <div id="index-featured-txt">
             <div class="meta">
               <div class="tag">
-                <span>BREAKING NEWS</span>
+                <span>{{edge.node.tag}}</span>
               </div>
               <div class="date">
-                <time datetime="December 03 2019">1 Day ago</time>
+                <timeago :since="edge.node.date" :datetime="edge.node.date" />
               </div>
             </div>
             <div class="headline">
-              <h1>Borneo is burning</h1>
+              <h1>{{edge.node.title}}</h1>
             </div>
-            <div class="excerpt">
-              <p>Welcome to the world's wildest intersection.</p>
-            </div>
-            <div class="sub">
-              <p>How the world's demand for palm oil is driving deforestation in Indonesia</p>
-            </div>
-            <g-link class="button" to="/404/">
+            <g-link class="button" :to="edge.node.path">
               <span>Read More</span>
             </g-link>
           </div>
@@ -43,30 +37,30 @@
         </aside>
         <div id="index-1-wrap">
           <ul>
-            <li>
+            <li v-for="edge in $page.topcontent.edges" :key="edge.node.id">
               <div class="index-m-featured">
-                <g-link class="index-m-img" to="/">
-                  <g-image src="~/assets/media/0.png" alt />
+                <g-link class="index-m-img" :to="edge.node.path">
+                  <g-image :src="edge.node.hero_image" :alt="edge.node.title" />
                 </g-link>
                 <div class="index-m-meta">
                   <div class="tag">
-                    <span>World</span>
+                    <span>{{edge.node.tag}}</span>
                   </div>
                   <div class="date">
-                    <time datetime="December 03 2019">1 week ago</time>
+                    <timeago :since="edge.node.date" :datetime="edge.node.date" />
                   </div>
                 </div>
-                <g-link class="index-m-title" to="/">
-                  <h2>Borneo wildfires put endangered oranguats under threat</h2>
+                <g-link class="index-m-title" :to="edge.node.path">
+                  <h2>{{edge.node.title}}</h2>
                 </g-link>
                 <div class="index-m-info">
-                  <span>Scott Forchette</span>
+                  <span>{{edge.node.author}}</span>
                 </div>
               </div>
             </li>
           </ul>
           <ul>
-            <li v-for="edge in $page.top.edges" :key="edge.node.id">
+            <li v-for="edge in $page.content.edges" :key="edge.node.id">
               <div class="index-m-tile">
                 <div class="index-m-meta">
                   <div class="tag">
@@ -76,7 +70,7 @@
                     <timeago :since="edge.node.date" :datetime="edge.node.date" />
                   </div>
                 </div>
-                <g-link class="index-m-title">
+                <g-link class="index-m-title" :to="edge.node.path">
                   <h2>{{edge.node.title}}</h2>
                 </g-link>
                 <div class="index-m-info">
@@ -84,7 +78,7 @@
                 </div>
               </div>
             </li>
-          </ul> 
+          </ul>
           <g-link to="/404/" class="button">
             <span>More Videos</span>
           </g-link>
@@ -98,24 +92,24 @@
         </aside>
         <div id="index-2-wrap">
           <ul>
-            <li>
+            <li v-for="edge in $page.topstory.edges" :key="edge.node.id">
               <div class="index-m-featured">
-                <g-link class="index-m-img" to="/">
-                  <g-image src="~/assets/media/0.png" alt />
+                <g-link class="index-m-img" :to="edge.node.path">
+                  <g-image :src="edge.node.hero_image" :alt="edge.node.title" />
                 </g-link>
                 <div class="index-m-meta">
                   <div class="tag">
-                    <span>World</span>
+                    <span>{{edge.node.tag}}</span>
                   </div>
                   <div class="date">
-                    <time datetime="December 03 2019">1 week ago</time>
+                    <timeago :since="edge.node.date" :datetime="edge.node.date" />
                   </div>
                 </div>
-                <g-link class="index-m-title" to="/">
-                  <h2>Borneo wildfires put endangered oranguats under threat</h2>
+                <g-link class="index-m-title" :to="edge.node.path">
+                  <h2>{{edge.node.title}}</h2>
                 </g-link>
                 <div class="index-m-info">
-                  <span>Scott Forchette</span>
+                  <span>{{edge.node.author}}</span>
                 </div>
               </div>
             </li>
@@ -128,17 +122,17 @@
                     <span>{{edge.node.tag}}</span>
                   </div>
                   <div class="date">
-                  <timeago :since="edge.node.date" :datetime="edge.node.date" />
+                    <timeago :since="edge.node.date" :datetime="edge.node.date" />
                   </div>
                 </div>
-                <g-link class="index-m-title">
+                <g-link class="index-m-title" :to="edge.node.path">
                   <h2>{{edge.node.title}}</h2>
                 </g-link>
                 <div class="index-m-info">
                   <span>{{edge.node.author}}</span>
                 </div>
               </div>
-            </li> 
+            </li>
           </ul>
           <g-link class="button" to="/404/">
             <span>More videos</span>
@@ -190,10 +184,29 @@ export default {
 
 <page-query>
  { 
-   top: allBlog(limit: 4) {
+    featured: allBlog(limit: 1, filter: { 
+      location: { in: ["Featured"] }}) {
         edges {
             node {
                 id
+                location
+                path
+                featured
+                title
+                tag
+                author
+                path
+                hero_image (quality: 80)
+                date  (format: "MMMM DD YYYY")
+            } 
+        }
+    }
+    topcontent: allBlog(limit: 1,filter: { location: { in: ["Content"] }, featured: { eq: true }}) {
+        edges {
+            node {
+                id
+                location
+                featured
                 path
                 title
                 tag
@@ -204,10 +217,28 @@ export default {
             } 
         }
     }
-    stories: allBlog(limit: 4) {
+    content: allBlog(limit: 4, filter: { location: { in: ["Content"] }, featured: { ne: true }}) {
         edges {
             node {
                 id
+                location
+                path
+                featured
+                title
+                tag
+                author
+                path
+                hero_image (quality: 80)
+                date  (format: "MMMM DD YYYY")
+            } 
+        }
+    }
+    topstory: allBlog(limit: 1,filter: { location: { in: ["Stories"] }, featured: { eq: true }}) {
+        edges {
+            node {
+                id
+                location
+                featured
                 path
                 title
                 tag
@@ -218,13 +249,32 @@ export default {
             } 
         }
     }
-    watch: allBlog(limit: 4) {
+    stories: allBlog(limit: 4, filter: { location: { in: ["Stories"] }, featured: { ne: true }}) {
+        edges {
+            node {
+                id
+                location
+                featured
+                path
+                title
+                tag
+                author
+                path
+                hero_image (quality: 80)
+                date  (format: "MMMM DD YYYY")
+            } 
+        }
+    }
+    watch: allBlog(limit: 4, filter: { 
+      location: { in: ["Watch"] }}) {
         edges {
             node {
                 id
                 path
                 title
                 tag
+                featured
+                location
                 author
                 path
                 hero_image (quality: 80)
@@ -398,6 +448,12 @@ export default {
 
     .headline {
       margin: 2.75vw 0 2vw;
+
+      h1 {
+        font-size: 3.5vw;
+        letter-spacing: -0.15vw;
+        line-height: 1.12;
+      }
     }
 
     .sub {
@@ -414,6 +470,12 @@ export default {
 
     .headline {
       margin: 0 0 6vw;
+
+      h1 {
+        font-size: 8.5vw;
+        letter-spacing: -0.5vw;
+        line-height: 1.12;
+      }
     }
 
     .excerpt {
