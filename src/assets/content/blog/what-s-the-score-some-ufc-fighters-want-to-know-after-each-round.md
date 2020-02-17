@@ -1,7 +1,8 @@
 ---
-title: What's the score? Some UFC fighters want to know after each round
-author: Nathan Rapaka
-date: 2019-08-19T07:00:00.000+00:00
+title: Ridiculous Patriots Rumor Season Picks Up Speed with a Report The'y'll Replace
+  Brady with Taysom Hill
+author: Scott Forchette
+date: 2019-11-08T02:00:00-06:00
 hero_image: "/src/assets/content/images/jj-ying-7JX0-bfiuxQ-unsplash.jpg"
 tag: UFC
 description: Read the UFC Rio Rancho feature on UFC bantamweight Nathaniel Wood
