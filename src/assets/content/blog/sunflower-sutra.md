@@ -6,8 +6,8 @@ hero_image: "/src/assets/content/images/Screen Shot 2020-02-11 at 5.11.11 PM.png
 tag: MARTIAL ARTS
 description: Read the UFC Rio Rancho feature on UFC bantamweight Nathaniel Wood
 video: https://interactive-examples.mdn.mozilla.net/media/examples/flower.mp4
-location: Content
-featured: true
+location: Watch
+featured: false
 video_url: ''
 
 ---
