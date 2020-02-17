@@ -1,9 +1,9 @@
 ---
-title: Nathaniel Wood is ready to turn it up
-author: Nathan Rapaka
+title: All the ways MLB teams could use new 26th man on the roster
+author: Scott Forchette
 date: 2020-02-11T08:00:00.000+00:00
-hero_image: "/src/assets/content/images/Screen Shot 2020-02-11 at 5.11.11 PM.png"
-tag: MARTIAL ARTS
+hero_image: "/src/assets/content/images/i-1.jpg"
+tag: ANALYSIS
 description: Read the UFC Rio Rancho feature on UFC bantamweight Nathaniel Wood
 video: https://interactive-examples.mdn.mozilla.net/media/examples/flower.mp4
 location: Content
