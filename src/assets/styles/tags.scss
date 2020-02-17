@@ -1,5 +1,5 @@
 .tag,
-.date { 
+.date {
     font-weight: 500;
     display: flex;
     align-items: center;
@@ -8,9 +8,10 @@
     @media (min-width: 501px) {
         padding: .8vw 1.2vw;
 
-        span, time {
+        span,
+        time {
             font-size: .85vw;
-            letter-spacing: .1vw; 
+            letter-spacing: .1vw;
         }
 
     }
@@ -18,9 +19,10 @@
     @media (max-width: 500px) {
         padding: 2.3vw 4vw;
 
-        span, time {
+        span,
+        time {
             font-size: 2.8vw;
-            letter-spacing: .3vw; 
+            letter-spacing: .3vw;
         }
     }
 }
@@ -29,13 +31,14 @@
 
     @media (max-width: 500px) {
         margin: 0 1.5vw 0 0;
-    } 
+    }
 
     background: rgba(33, 206, 153, .3);
 
 
     span {
-        color: #00bf85;
+        color: var(--tag-color);
+        transition: color .6s;
     }
 }
 
@@ -43,6 +46,5 @@
 
     time {
         opacity: 0.75
-
     }
-}  
+}
