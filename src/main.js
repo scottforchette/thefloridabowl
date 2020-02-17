@@ -6,7 +6,13 @@ export default function (Vue, {
   head,
   router
 }) {
-  Vue.component('Layout', DefaultLayout) 
+  Vue.component('Layout', DefaultLayout)
+
+  router.afterEach((to, from) => {
+    if (process.isClient) {
+      document.documentElement.removeAttribute("style");
+    }
+  })
 
   Vue.use(VueTimeago, {
     name: 'timeago',
