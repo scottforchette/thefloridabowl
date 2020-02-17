@@ -6,9 +6,6 @@
     </div>
     <Nav />
     <Search />
-
-    
-
     <div id="issue">Please turn your device.</div>
   </main>
 </template>
@@ -120,14 +117,12 @@ html {
   cursor: default;
   -webkit-tap-highlight-color: transparent;
   letter-spacing: -0.01vw;
-      line-height: 1;
-
-  @media (min-width: 501px) {
-    font-size: 1.2vw; 
-  }
-
+  line-height: 1;
   @media (max-width: 500px) {
-    font-size: 4.27vw; 
+    font-size: 4.27vw;
+  }
+  @media (min-width: 501px) {
+    font-size: 1.2vw;
   }
 }
 
@@ -155,7 +150,7 @@ html {
   }
 
   @media (min-width: 501px) {
-    font-size: 1.8vw; 
+    font-size: 1.8vw;
   }
 }
 
@@ -164,7 +159,9 @@ html {
 
   @media (max-height: 420px) and (max-width: 900px) {
     display: flex;
-  }
+        font-size: 2.6vw;
+
+  } 
 }
 
 #page {

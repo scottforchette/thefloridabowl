@@ -10,10 +10,14 @@
             />
           </svg>
         </div>
-        <input v-model="searchTerm" type="text" placeholder="Search" />
+        <input 
+        v-model="searchTerm" 
+        type="text" 
+        autocomplete="off"
+        placeholder="Search" />
         <ul>
           <li v-for="result in search" :key="result.id">
-            <g-link :to="result.path" class="navbar-item">
+            <g-link :to="result.path">
               <div class="meta">
                 <div class="tag">
                   <span>{{ result.tag }}</span>

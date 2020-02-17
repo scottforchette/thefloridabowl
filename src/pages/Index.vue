@@ -66,82 +66,28 @@
             </li>
           </ul>
           <ul>
-            <li>
+            <li v-for="edge in $page.top.edges" :key="edge.node.id">
               <div class="index-m-tile">
                 <div class="index-m-meta">
                   <div class="tag">
-                    <span>World</span>
+                    <span>{{edge.node.tag}}</span>
                   </div>
                   <div class="date">
-                    <time datetime="December 03 2019">2 days ago</time>
+                    <timeago :since="edge.node.date" :datetime="edge.node.date" />
                   </div>
                 </div>
                 <g-link class="index-m-title">
-                  <h2>Borneo wildfires put endangered oranguats under threat</h2>
+                  <h2>{{edge.node.title}}</h2>
                 </g-link>
                 <div class="index-m-info">
-                  <span>Scott Forchette</span>
+                  <span>{{edge.node.author}}</span>
                 </div>
               </div>
             </li>
-            <li>
-              <div class="index-m-tile">
-                <div class="index-m-meta">
-                  <div class="tag">
-                    <span>World</span>
-                  </div>
-                  <div class="date">
-                    <time datetime="December 03 2019">2 months ago</time>
-                  </div>
-                </div>
-                <g-link class="index-m-title" to="/">
-                  <h2>Borneo wildfires put endangered oranguats under threat</h2>
-                </g-link>
-                <div class="index-m-info">
-                  <span>Scott Forchette</span>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="index-m-tile">
-                <div class="index-m-meta">
-                  <div class="tag">
-                    <span>World</span>
-                  </div>
-                  <div class="date">
-                    <time datetime="December 03 2019">2 months ago</time>
-                  </div>
-                </div>
-                <g-link class="index-m-title" to="/">
-                  <h2>Borneo wildfires put endangered oranguats under threat</h2>
-                </g-link>
-                <div class="index-m-info">
-                  <span>Scott Forchette</span>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="index-m-tile">
-                <div class="index-m-meta">
-                  <div class="tag">
-                    <span>World</span>
-                  </div>
-                  <div class="date">
-                    <time datetime="December 03 2019">1 months ago</time>
-                  </div>
-                </div>
-                <g-link class="index-m-title" to="/">
-                  <h2>Borneo wildfires put endangered oranguats under threat</h2>
-                </g-link>
-                <div class="index-m-info">
-                  <span>Scott Forchette</span>
-                </div>
-              </div>
-            </li>
-          </ul>
-          <a href="/404/" class="button">
+          </ul> 
+          <g-link to="/404/" class="button">
             <span>More Videos</span>
-          </a>
+          </g-link>
         </div>
       </div>
       <div id="index-2">
@@ -175,78 +121,24 @@
             </li>
           </ul>
           <ul>
-            <li>
+            <li v-for="edge in $page.stories.edges" :key="edge.node.id">
               <div class="index-m-tile">
                 <div class="index-m-meta">
                   <div class="tag">
-                    <span>World</span>
+                    <span>{{edge.node.tag}}</span>
                   </div>
                   <div class="date">
-                    <time datetime="December 03 2019">2 days ago</time>
+                  <timeago :since="edge.node.date" :datetime="edge.node.date" />
                   </div>
                 </div>
                 <g-link class="index-m-title">
-                  <h2>Borneo wildfires put endangered oranguats under threat</h2>
+                  <h2>{{edge.node.title}}</h2>
                 </g-link>
                 <div class="index-m-info">
-                  <span>Scott Forchette</span>
+                  <span>{{edge.node.author}}</span>
                 </div>
               </div>
-            </li>
-            <li>
-              <div class="index-m-tile">
-                <div class="index-m-meta">
-                  <div class="tag">
-                    <span>World</span>
-                  </div>
-                  <div class="date">
-                    <time datetime="December 03 2019">2 months ago</time>
-                  </div>
-                </div>
-                <g-link class="index-m-title" to="/">
-                  <h2>Borneo wildfires put endangered oranguats under threat</h2>
-                </g-link>
-                <div class="index-m-info">
-                  <span>Scott Forchette</span>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="index-m-tile">
-                <div class="index-m-meta">
-                  <div class="tag">
-                    <span>World</span>
-                  </div>
-                  <div class="date">
-                    <time datetime="December 03 2019">2 months ago</time>
-                  </div>
-                </div>
-                <g-link class="index-m-title" to="/">
-                  <h2>Borneo wildfires put endangered oranguats under threat</h2>
-                </g-link>
-                <div class="index-m-info">
-                  <span>Scott Forchette</span>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="index-m-tile">
-                <div class="index-m-meta">
-                  <div class="tag">
-                    <span>World</span>
-                  </div>
-                  <div class="date">
-                    <time datetime="December 03 2019">1 months ago</time>
-                  </div>
-                </div>
-                <g-link class="index-m-title" to="/">
-                  <h2>Borneo wildfires put endangered oranguats under threat</h2>
-                </g-link>
-                <div class="index-m-info">
-                  <span>Scott Forchette</span>
-                </div>
-              </div>
-            </li>
+            </li> 
           </ul>
           <g-link class="button" to="/404/">
             <span>More videos</span>
@@ -261,80 +153,23 @@
         </aside>
         <div id="index-3-wrap">
           <ul>
-            <li class="index-3-li">
-              <g-link class="index-m-img" to="/">
-                <g-image src="~/assets/media/0.png" alt />
+            <li class="index-3-li" v-for="edge in $page.watch.edges" :key="edge.node.id">
+              <g-link class="index-m-img" :to="edge.node.path">
+                <g-image :src="edge.node.hero_image" :alt="edge.node.title" />
               </g-link>
               <div class="index-m-meta">
                 <div class="tag">
-                  <span>World</span>
+                  <span>{{edge.node.tag}}</span>
                 </div>
                 <div class="date">
-                  <time datetime="December 03 2019">1 week ago</time>
+                  <timeago :since="edge.node.date" :datetime="edge.node.date" />
                 </div>
               </div>
-              <g-link class="index-m-title" to="/">
-                <h2>Borneo wildfires put endangered oranguats under threat</h2>
+              <g-link class="index-m-title" :to="edge.node.path">
+                <h2>{{edge.node.title}}</h2>
               </g-link>
               <div class="index-m-info">
-                <span>Scott Forchette</span>
-              </div>
-            </li>
-            <li class="index-3-li">
-              <g-link class="index-m-img" to="/">
-                <g-image src="~/assets/media/0.png" alt />
-              </g-link>
-              <div class="index-m-meta">
-                <div class="tag">
-                  <span>World</span>
-                </div>
-                <div class="date">
-                  <time datetime="December 03 2019">1 week ago</time>
-                </div>
-              </div>
-              <g-link class="index-m-title" to="/">
-                <h2>Borneo wildfires put endangered oranguats under threat</h2>
-              </g-link>
-              <div class="index-m-info">
-                <span>Scott Forchette</span>
-              </div>
-            </li>
-            <li class="index-3-li">
-              <g-link class="index-m-img" to="/">
-                <g-image src="~/assets/media/0.png" alt />
-              </g-link>
-              <div class="index-m-meta">
-                <div class="tag">
-                  <span>World</span>
-                </div>
-                <div class="date">
-                  <time datetime="December 03 2019">1 week ago</time>
-                </div>
-              </div>
-              <g-link class="index-m-title" to="/">
-                <h2>Borneo wildfires put endangered oranguats under threat</h2>
-              </g-link>
-              <div class="index-m-info">
-                <span>Scott Forchette</span>
-              </div>
-            </li>
-            <li class="index-3-li">
-              <g-link class="index-m-img" to="/">
-                <g-image src="~/assets/media/0.png" alt />
-              </g-link>
-              <div class="index-m-meta">
-                <div class="tag">
-                  <span>World</span>
-                </div>
-                <div class="date">
-                  <time datetime="December 03 2019">1 week ago</time>
-                </div>
-              </div>
-              <g-link class="index-m-title" to="/">
-                <h2>Borneo wildfires put endangered oranguats under threat</h2>
-              </g-link>
-              <div class="index-m-info">
-                <span>Scott Forchette</span>
+                <span>{{edge.node.author}}</span>
               </div>
             </li>
           </ul>
@@ -352,6 +187,53 @@ export default {
   }
 };
 </script>
+
+<page-query>
+ { 
+   top: allBlog(limit: 4) {
+        edges {
+            node {
+                id
+                path
+                title
+                tag
+                author
+                path
+                hero_image (quality: 80)
+                date  (format: "MMMM DD YYYY")
+            } 
+        }
+    }
+    stories: allBlog(limit: 4) {
+        edges {
+            node {
+                id
+                path
+                title
+                tag
+                author
+                path
+                hero_image (quality: 80)
+                date  (format: "MMMM DD YYYY")
+            } 
+        }
+    }
+    watch: allBlog(limit: 4) {
+        edges {
+            node {
+                id
+                path
+                title
+                tag
+                author
+                path
+                hero_image (quality: 80)
+                date  (format: "MMMM DD YYYY")
+            } 
+        }
+    } 
+}
+</page-query>
 
 <style lang='scss'>
 #index {
@@ -564,7 +446,7 @@ export default {
 
 .index-m-title {
   @media (min-width: 501px) {
-    font-size: 1.6vw; 
+    font-size: 1.6vw;
     line-height: 1.3;
     margin: 0 0 1.4vw;
   }
@@ -620,7 +502,6 @@ export default {
     white-space: nowrap;
     -webkit-overflow-scrolling: touch;
     -ms-overflow-style: -ms-autohiding-scrollbar;
- 
   }
 
   @media (min-width: 501px) {
