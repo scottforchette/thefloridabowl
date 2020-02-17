@@ -9,6 +9,7 @@ description: Sometimes you just need to go somewhere new. For high-priced QBs su
   a lot of sense.
 video: https://interactive-examples.mdn.mozilla.net/media/examples/flower.mp4
 location: Stories
+featured: true
 
 ---
 # Nathaniel Wood is not one to look past any opponent, but the bantamweight up and comer does want to put it out there that should all go well in New Mexico when he faces John Dodson this weekend, he wouldn’t mind getting a spot on next month’s card in his hometown of London.
