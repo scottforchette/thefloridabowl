@@ -1,11 +1,11 @@
 ---
-title: What's the score? Some UFC fighters want to know after each round
+title: Red Sox Ownership is Using the Nomar Trade as an Obvious ...
 author: Nathan Rapaka
 date: 2019-08-19T07:00:00.000+00:00
 hero_image: "/src/assets/content/images/jj-ying-7JX0-bfiuxQ-unsplash.jpg"
 tag: UFC
 description: Read the UFC Rio Rancho feature on UFC bantamweight Nathaniel Wood
-location: Stories
+location: Content
 featured: false
 video_url: ''
 
