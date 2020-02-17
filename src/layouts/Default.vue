@@ -24,20 +24,7 @@ export default {
 };
 </script> 
 
-<style lang="scss">
-@font-face {
-  font-family: Graphik;
-  font-weight: 400;
-  font-style: normal;
-  src: url("../assets/font/GR.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: Graphik;
-  font-weight: 500;
-  font-style: normal;
-  src: url("../assets/font/GM.woff2") format("woff2");
-}
+<style lang="scss"> 
 
 html {
   -webkit-text-size-adjust: none;
@@ -113,7 +100,10 @@ svg {
 }
 
 html {
-  font-family: Graphik, Helvetica;
+  font-family: -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
   cursor: default;
   -webkit-tap-highlight-color: transparent;
   letter-spacing: -0.01vw;
