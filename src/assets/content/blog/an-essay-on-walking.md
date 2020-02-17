@@ -5,6 +5,9 @@ date: 2019-07-29T07:00:00.000+00:00
 hero_image: "/src/assets/content/images/heather-shevlin-3B_NrzTjajc-unsplash.jpg"
 tag: TRENDING
 description: Read the UFC Rio Rancho feature on UFC bantamweight Nathaniel Wood
+location: Stories
+featured: false
+video_url: ''
 
 ---
 Then it is that I appreciate the beauty and the glory of architecture, which itself never turns in, but forever stands out and erect, keeping watch over the slumberers.
