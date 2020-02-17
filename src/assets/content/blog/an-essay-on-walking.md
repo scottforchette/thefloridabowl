@@ -1,5 +1,5 @@
 ---
-title: What is your name
+title: 'UFC Fight Night: Should Jon Jones be next for Jan Blachowicz?'
 author: Nathan Rapaka
 date: 2019-07-29T07:00:00.000+00:00
 hero_image: "/src/assets/content/images/heather-shevlin-3B_NrzTjajc-unsplash.jpg"
