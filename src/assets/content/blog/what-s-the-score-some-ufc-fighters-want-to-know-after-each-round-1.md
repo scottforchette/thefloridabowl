@@ -3,7 +3,7 @@ title: Red Sox Ownership is Using the Nomar Trade as an Obvious ...
 author: Nathan Rapaka
 date: 2019-08-19T07:00:00.000+00:00
 hero_image: "/src/assets/content/images/jj-ying-7JX0-bfiuxQ-unsplash.jpg"
-tag: UFC
+tag: ANALYSIS
 description: Read the UFC Rio Rancho feature on UFC bantamweight Nathaniel Wood
 location: Content
 featured: false
