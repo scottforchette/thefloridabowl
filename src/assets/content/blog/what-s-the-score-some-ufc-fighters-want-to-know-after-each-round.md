@@ -4,7 +4,7 @@ title: Ridiculous Patriots Rumor Season Picks Up Speed with a Report The'y'll Re
 author: Scott Forchette
 date: 2019-11-08T02:00:00-06:00
 hero_image: "/src/assets/content/images/jj-ying-7JX0-bfiuxQ-unsplash.jpg"
-tag: UFC
+tag: TRENDING
 description: Read the UFC Rio Rancho feature on UFC bantamweight Nathaniel Wood
 location: Stories
 featured: false
