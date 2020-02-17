@@ -1,5 +1,5 @@
 ---
-title: On the Geneology of Morals
+title: What's the score? Some UFC fighters want to know after each round
 author: Nathan Rapaka
 date: 2019-08-19T07:00:00.000+00:00
 hero_image: "/src/assets/content/images/jj-ying-7JX0-bfiuxQ-unsplash.jpg"
