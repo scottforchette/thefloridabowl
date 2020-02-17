@@ -2,6 +2,26 @@
 label: Blog Post
 hide_body: false
 fields:
+- name: location
+  type: select
+  default: Content
+  config:
+    required: true
+    options:
+    - Watch
+    - Featured
+    - Stories
+    - Content
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  description: Choose one to allocate where the post will go
+  label: Location
+- name: featured
+  type: boolean
+  label: Featured
 - type: text
   name: title
   label: Title
