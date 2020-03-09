@@ -1,26 +1,13 @@
 <template>
   <nav id="nav">
-    <div id="nav-menu"></div>
     <div id="nav-bg"></div>
+    <div id="nav-logo">
+      <g-link to="/">the florida bowl</g-link>
+    </div>
     <div id="nav-wrap">
-      <div id="nav-0">
-        <div id="nav-burger" @click.prevent="toggle">
-          <span></span>
-          <span></span>
-        </div>
-        <div id="nav-brand">
-          <g-link to="/">
-            <span>unfltrdsports</span>
-          </g-link>
-        </div>
-      </div>
       <div id="nav-1">
         <div id="nav-search" @click.prevent="sendMessage">
           <div>search</div>
-        </div>
-        <div id="nav-mode" @click.prevent="toggleMode">
-          <div v-if="mode">dark</div>
-          <div v-else>light</div>
         </div>
       </div>
     </div>
@@ -30,14 +17,9 @@
 <script>
 export default {
   data: () => ({
-    mode: false,
     isOpen: false
   }),
   methods: {
-    toggleMode() {
-      this.mode = !this.mode;
-      window.__setPreferredTheme(this.mode ? "dark" : "light");
-    },
     open() {
       this.nav = document.getElementById("nav-burger");
       this.navMenu = document.getElementById("nav-menu");
@@ -64,11 +46,8 @@ export default {
       }
     },
     sendMessage() {
-      this.$root.$emit('message from abc')
+      this.$root.$emit("message from abc");
     }
-  },
-  mounted() {
-    if (window.__theme == "dark") this.darkTheme = true;
   }
 };
 </script>
@@ -107,12 +86,12 @@ export default {
 }
 
 #nav-burger,
-#nav-mode { 
+#nav-mode {
   display: flex;
   flex-direction: column;
   justify-content: center;
   cursor: pointer;
-} 
+}
 
 #nav-burger {
   span {
@@ -159,11 +138,10 @@ export default {
   }
 }
 
-#nav-0,
 #nav-1 {
   display: flex;
   align-items: center;
-  color: #fff;
+  color: #000;
 }
 
 #nav-search {
@@ -174,7 +152,7 @@ export default {
   font-weight: 500;
 
   @media (min-width: 501px) {
-    font-size: 1.7vw; 
+    font-size: 1.7vw;
   }
 }
 
@@ -187,7 +165,7 @@ export default {
     margin: 0 0 0 3vw;
 
     a {
-      font-size: 1.7vw; 
+      font-size: 1.7vw;
     }
   }
 
@@ -195,7 +173,7 @@ export default {
     margin: 0 0 0 6vw;
 
     a {
-      font-size: 5.1vw; 
+      font-size: 5.1vw;
     }
   }
 }
@@ -206,34 +184,33 @@ export default {
   right: 0;
   top: 0;
   bottom: 0;
-  background: #000;
-}
-
-#nav-menu {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  background: var(--bg-color);
-  height: 100vh;
-  transform: translateZ(0);
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 0.25s, background 0.6s;
-
-  &.open {
-    opacity: 1;
-    pointer-events: all;
-  }
-
-  @media (min-width: 501px) {
-    display: none;
-  }
+  background: #fff;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 24px 0px;
 }
 
 @media (min-width: 501px) {
   #nav-search {
     margin: 0 2vw 0 0;
+  }
+}
+
+#nav-logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+
+  @media (min-width: 501px) {
+    a {
+      font-size: 1.9vw;
+    }
+  }
+
+  @media (max-width: 500px) {
+    a {
+      font-size: 5vw;
+    }
   }
 }
 </style>

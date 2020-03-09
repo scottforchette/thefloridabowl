@@ -151,15 +151,5 @@ html {
         font-size: 2.6vw;
 
   } 
-}
-
-#page {
-  @media (min-width: 501px) {
-    padding: 6.25vw 0 0;
-  }
-
-  @media (max-width: 500px) {
-    padding: 15vw 0 0;
-  }
-}
+} 
 </style>

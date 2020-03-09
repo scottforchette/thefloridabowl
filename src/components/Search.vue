@@ -10,7 +10,13 @@
             />
           </svg>
         </div>
-        <input v-model="searchTerm" type="text" autocomplete="off" placeholder="Search" aria-label="Search"/>
+        <input
+          v-model="searchTerm"
+          type="text"
+          autocomplete="off"
+          placeholder="Search"
+          aria-label="Search"
+        />
         <ul>
           <li v-for="result in search" :key="result.id">
             <g-link :to="result.path">
@@ -189,12 +195,7 @@ input {
 }
 
 #search-close {
-  position: absolute;
-  top: 2.1875vw;
-  right: 0;
-  padding: 2.125vw;
-  width: 5.75vw;
-  height: 5.75vw;
+  position: absolute; 
   cursor: pointer;
 
   svg {
@@ -202,11 +203,19 @@ input {
     width: 100%;
     height: 100%;
   }
-}
+} 
 
 @media (min-width: 501px) {
+  #search-close { 
+  top: 2.1875vw;
+  right: 0;
+  padding: 2.125vw;
+  width: 5.75vw;
+  height: 5.75vw;  
+}
+
   .search-headline {
-    font-size: 2.5vw; 
+    font-size: 2.5vw;
     line-height: 1.3;
     margin: 1vw 0 0.75vw;
   }
@@ -230,8 +239,16 @@ input {
 }
 
 @media (max-width: 500px) {
+  #search-close { 
+  top: 2.1875vw;
+    right: 0;
+    padding: 2.125vw;
+    width: 20vw;
+    height: 10vw;
+}
+
   .search-headline {
-    font-size: 2.5vw; 
+    font-size: 2.5vw;
     line-height: 1.3;
     margin: 1vw 0 0.75vw;
   }
@@ -242,7 +259,7 @@ input {
 
   #search-wrap {
     input {
-      font-size: 5.6vw; 
+      font-size: 5.6vw;
       line-height: 1.3;
     }
   }
@@ -261,7 +278,7 @@ input {
   }
 
   .search-headline {
-    font-size: 7vw;  
+    font-size: 7vw;
     line-height: 1.3;
     margin: 0 0 3vw;
   }

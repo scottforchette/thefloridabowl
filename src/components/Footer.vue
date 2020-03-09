@@ -3,27 +3,20 @@
     <div id="footer-wrap">
       <ul>
         <li>
+          <g-link to="/contact" class="link">Contact</g-link>
+
           <g-link to="/legal/terms-of-use" class="link">Terms of Use</g-link>
-          <g-link to="/legal/privacy-policy" class="link">Privacy Policy</g-link>
-          <g-link to="/legal/accessibility" class="link">Accessibility</g-link>
         </li>
 
         <li>
-          <g-link to="/careers/" class="link">Careers</g-link>
-          <g-link to="/legal/" class="link">Legal</g-link>
-          <g-link to="/donate/" class="link">Donate</g-link>
-        </li>
-
-        <li>
-          <g-link to="/newsletter/" class="link">Newsletter</g-link>
-          <a href="https://unfltrdsports.com/sitemap.xml" class="link">Sitemap</a>
+          <a href="https://thefloridabowl.com/sitemap.xml" class="link">Sitemap</a>
         </li>
       </ul>
       <div class="footer-bottom">
-        © 2020 Unfltrdsports. All rights reserved.
+        © 2020 The Florida Bowl. All rights reserved.
         <a
           href="https://www.instagram.com/atomsagency/"
-        >Built by Atoms.</a>
+        >Site by Atoms.</a>
       </div>
     </div>
   </footer>
@@ -74,9 +67,9 @@
     }
   }
 
-  .footer-bottom { 
+  .footer-bottom {
     line-height: 1;
-  } 
+  }
 }
 
 @media (max-width: 500px) {
@@ -103,11 +96,11 @@
   }
 
   .link {
-    font-size: 4.27vw; 
+    font-size: 4.27vw;
   }
 
   .footer-bottom {
-    font-size: 4.27vw; 
+    font-size: 4.27vw;
     line-height: 1;
 
     a {
