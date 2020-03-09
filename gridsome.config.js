@@ -1,8 +1,8 @@
 module.exports = {
-  siteName: 'Unfltrdsports',
-  siteUrl: 'https://www.unfltrdsports.com/',
-  siteDescription: 'Unfltrdsports',
-  titleTemplate: '%s | Unfltrdsports',
+  siteName: 'The Florida Bowl',
+  siteUrl: 'https://www.thefloridabowl.com/',
+  siteDescription: 'The Florida Bowl',
+  titleTemplate: '%s | The Florida Bowl',
   plugins: [{
       use: '@gridsome/source-filesystem',
       options: {

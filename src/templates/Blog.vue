@@ -39,7 +39,7 @@ export default {
         {
           key: "canonical",
           ref: "canonical",
-          content: "https://unfltrdsports.com" + this.$page.post.path
+          content: "https://thefloridabowl.com" + this.$page.post.path
         }
       ],
       meta: [
@@ -51,7 +51,7 @@ export default {
         {
           key: "og:url",
           property: "og:url",
-          content: "https://unfltrdsports.com" + this.$page.post.path
+          content: "https://thefloridabowl.com" + this.$page.post.path
         },
         {
           key: "description",
@@ -77,39 +77,14 @@ export default {
     };
   },
   computed: {
-    next() {
-      var allBlogs = this.$page.all.edges,
-        firstBlogPath = allBlogs[0].node.path,
-        currentBlog = allBlogs.filter(
-          l => l.node.title === this.$page.post.title
-        );
-      function isNull(l) {
-        return null == l || null == l;
-      }
-      return isNull(currentBlog[0].next)
-        ? firstBlogPath
-        : currentBlog[0].next.path;
-    },
-    prev() {
-      var allBlogs = this.$page.all.edges,
-        firstBlogPath = allBlogs[0].node.path,
-        currentBlog = allBlogs.filter(
-          l => l.node.title === this.$page.post.title
-        );
-      function isNull(l) {
-        return null == l || null == l;
-      }
-      return isNull(currentBlog[0].previous)
-        ? firstBlogPath
-        : currentBlog[0].previous.path;
-    },
+    
     em() {
       var subject = this.$page.post.title,
         body =
-          "https://unfltrdsports.com" +
+          "https://thefloridabowl.com" +
           this.$page.post.path +
           " " +
-          "via @unfltrdsports",
+          "via @thefloridabowl",
         subjectEncoded = encodeURIComponent(subject),
         bodyEncoded = encodeURIComponent(body),
         href = "mailto:?subject=" + subjectEncoded + "&body=" + bodyEncoded;
@@ -131,7 +106,7 @@ export default {
         params = {
           url: document.URL,
           text: this.$page.post.title,
-          via: "unfltrdsports"
+          via: "thefloridabowl"
         };
       for (var prop in params)
         url += "&" + prop + "=" + encodeURIComponent(params[prop]);

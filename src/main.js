@@ -21,7 +21,7 @@ export default function (Vue, {
   head.link.push({
     key: 'canonical',
     rel: 'canonical',
-    href: 'https://www.unfltrdsports.com/'
+    href: 'https://www.thefloridabowl.com/'
   })
 
   head.meta.push({
@@ -33,13 +33,13 @@ export default function (Vue, {
   head.meta.push({
     key: 'og:image',
     name: 'og:image',
-    content: 'https://unfltrdsports.com/og/1200-630.png'
+    content: 'https://thefloridabowl.com/og/1200-630.png'
   })
 
   head.meta.push({
     key: 'og:url',
     name: 'og:url',
-    content: 'https://unfltrdsports.com/'
+    content: 'https://thefloridabowl.com/'
   })
 
   head.meta.push({
@@ -75,7 +75,7 @@ export default function (Vue, {
   head.meta.push({
     key: 'twitter:image',
     name: 'twitter:image',
-    content: 'https://unfltrdsports.com/og/1200-630.png'
+    content: 'https://thefloridabowl.com/og/1200-630.png'
   })
 
   head.meta.push({
