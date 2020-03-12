@@ -1,5 +1,15 @@
 <template>
   <nav id="nav">
+    <div id="nav-mobile">
+      <ul>
+        <li>
+          <g-link to="/latest/">Latest</g-link>
+        </li>
+        <li>
+          <g-link to="/contact/">Contact</g-link>
+        </li>
+      </ul>
+    </div>
     <div id="nav-bg"></div>
     <div id="nav-logo">
       <g-link to="/">the florida bowl</g-link>
@@ -15,16 +25,8 @@
           </li>
         </ul>
         <div id="nav-toggle" @click.prevent="toggle">
-          <svg viewBox="0 0 60 50" v-if="isOpen">
-            <polygon points="0 0 0 6 60 6 60 0" />
-            <polygon points="0 22 0 28 60 28 60 22" />
-            <polygon points="0 44 0 50 60 50 60 44" />
-          </svg>
-          <svg viewBox="0 0 60 50" v-else>
-            <polygon points="0 0 0 6 60 6 60 0" />
-            <polygon points="0 22 0 28 60 28 60 22" />
-            <polygon points="0 44 0 50 60 50 60 44" />
-          </svg>
+          <div v-if="isOpen">Close</div>
+          <div v-else>Menu</div>
         </div>
       </div>
       <div id="nav-1">
@@ -82,21 +84,17 @@ export default {
     },
 
     open() {
-      this.nav = document.getElementById("nav-burger");
-      this.navMenu = document.getElementById("nav-menu");
+      this.nav = document.getElementById("nav-mobile"); 
       this.html = document.documentElement;
       this.isOpen = true;
-      this.nav.classList.add("open");
-      this.navMenu.classList.add("open");
+      this.nav.classList.add("open"); 
       this.html.style.overflow = "hidden";
     },
     close() {
-      this.nav = document.getElementById("nav-burger");
-      this.navMenu = document.getElementById("nav-menu");
+      this.nav = document.getElementById("nav-mobile"); 
       this.html = document.documentElement;
       this.isOpen = false;
-      this.nav.classList.remove("open");
-      this.navMenu.classList.remove("open");
+      this.nav.classList.remove("open"); 
       this.html.removeAttribute("style");
     },
     toggle() {
@@ -180,8 +178,7 @@ export default {
   }
 }
 
-#nav-1,
-#nav-toggle {
+#nav-1 {
   @media (min-width: 501px) {
     height: 100%;
     width: 2vw;
@@ -232,6 +229,12 @@ export default {
   box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 24px 0px;
 }
 
+@media (max-width: 500px) {
+  #nav-0-1 {
+    display: none;
+  }
+}
+
 @media (min-width: 501px) {
   #nav-search {
     margin: 0 2vw 0 0;
@@ -255,6 +258,40 @@ export default {
     a {
       font-size: 5vw;
     }
+  }
+}
+
+#nav-mobile {
+  display: none;
+  position: absolute;
+  top: 0;
+  background: var(--bg-color);
+  transition: background 0.6s;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 24px 0px;
+  width: 100%;
+  height: 35vh;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transform: translate3d(0, -100%, 0);
+  transition: .5s;
+  z-index: -1;
+
+  @media (max-width: 500px) {
+    display: flex;
+
+    ul {
+      padding: 10vw 0 0;
+    }
+
+    a {
+      font-size: 7vw;
+      line-height: 12vw;
+    }
+  }
+
+  &.open {
+      transform: translate3d(0, 0, 0);
   }
 }
 </style>
