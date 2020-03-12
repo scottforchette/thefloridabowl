@@ -6,7 +6,14 @@
     </div>
     <div id="nav-wrap">
       <div id="nav-0">
-        <div id="ul"></div>
+        <ul id="nav-0-1">
+          <li>
+            <g-link to="/latest/">Latest</g-link>
+          </li>
+          <li>
+            <g-link to="/contact/">Contact</g-link>
+          </li>
+        </ul>
         <div id="nav-toggle" @click.prevent="toggle">
           <svg viewBox="0 0 60 50" v-if="isOpen">
             <polygon points="0 0 0 6 60 6 60 0" />
@@ -145,16 +152,31 @@ export default {
   justify-content: center;
 }
 
-#nav-1,
-#nav-0 {
+#nav-1 {
   display: flex;
   align-items: center;
   cursor: pointer;
 }
 
 #nav-0 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   svg {
     fill: var(--body-color);
+  }
+}
+
+#nav-0-1 {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  @media (min-width: 501px) {
+    font-size: 1.3vw;
+
+    li {
+      margin: 0 3vw 0 0;
+    }
   }
 }
 
@@ -170,13 +192,12 @@ export default {
     width: 6vw;
   }
 }
- 
+
 #nav-toggle {
   @media (min-width: 501px) {
-    display: none
+    display: none;
   }
 }
-
 
 #nav-brand {
   a {
