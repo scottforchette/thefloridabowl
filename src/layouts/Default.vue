@@ -4,21 +4,18 @@
       <slot />
       <Footer />
     </div>
-    <Nav />
-    <Search />
+    <Nav /> 
     <div id="issue">Please turn your device.</div>
   </main>
 </template>
 
 <script>
-import Nav from "@/components/Nav";
-import Search from "@/components/Search";
+import Nav from "@/components/Nav"; 
 import Footer from "@/components/Footer";
 
 export default {
   components: {
-    Nav,
-    Search,
+    Nav, 
     Footer
   }
 };
@@ -33,9 +30,13 @@ html {
 }
 
 body {
-  background: var(--bg-color);
+  background: var(--body-b-color);
   color: var(--body-color);
   transition: color 0.6s, background 0.6s;
+}
+
+#app {
+  overflow: hidden;
 }
 
 a,

@@ -1,22 +1,41 @@
 <template>
   <footer id="footer">
     <div id="footer-wrap">
-      <ul>
-        <li>
-          <g-link to="/contact" class="link">Contact</g-link>
-
-          <g-link to="/legal/terms-of-use" class="link">Terms of Use</g-link>
-        </li>
-
-        <li>
-          <a href="https://thefloridabowl.com/sitemap.xml" class="link">Sitemap</a>
-        </li>
-      </ul>
+      <div id="f-0">
+        <div class="f-0-1">
+          <g-link to="/">the florida bowl</g-link>
+        </div>
+        <div class="f-0-2">
+          <div class="f-lbl">SITEMAP</div>
+          <ul class="footer-content">
+            <li>
+              <g-link to="/">Home</g-link>
+            </li>
+            <li>
+              <g-link to="/latest/">Latest</g-link>
+            </li>
+            <li>
+              <g-link to="/contact/">Contact</g-link>
+            </li>
+          </ul>
+        </div>
+        <div class="f-0-3">
+          <div class="f-lbl">SOCIAL</div>
+          <ul class="footer-content">
+            <li>
+              <a href="https://facebook.com/thefloridabowl">Facebook</a>
+            </li>
+            <li>
+              <a href="https://instagram.com/thefloridabowl">Instagram</a>
+            </li>
+          </ul>
+        </div>
+      </div>
       <div class="footer-bottom">
-        © 2020 The Florida Bowl. All rights reserved.
-        <a
-          href="https://www.instagram.com/atomsagency/"
-        >Site by Atoms.</a>
+        <div>© 2020 The Florida Bowl. All rights reserved.</div>
+        <div>
+          <a href="https://www.instagram.com/atomsagency/">Site by Atoms.</a>
+        </div>
       </div>
     </div>
   </footer>
@@ -24,75 +43,113 @@
 
 <style lang="scss">
 #footer {
-  transition: border-color 0.6s;
-  border-top: 1px solid var(--border-color);
+  background: #000;
+  color: #fff;
+
+  a {
+    display: table;
+  }
+}
+
+#f-0 {
+  display: flex;
 }
 
 #footer-wrap {
   overflow: hidden;
+
   ul {
     display: flex;
-  }
-
-  li {
-    display: flex;
-    flex-direction: column;
   }
 }
 
 .footer-bottom {
+  display: flex;
+  justify-content: space-between;
   opacity: 0.8;
 }
 
-.link {
-  line-height: 1;
+.f-0-3 ul,
+.f-0-2 ul {
+  display: flex;
+  flex-direction: column;
 }
 
 @media (min-width: 501px) {
   #footer-wrap {
-    padding: 10vw 0 5vw 44.5vw;
+    padding: 5vw;
+  }
 
-    ul {
-      padding: 0 0 6vw;
-    }
+  .f-0-1 {
+    width: 25.6vw;
 
-    li {
-      width: 45vw;
-
-      a {
-        display: inline-block;
-
-        padding: 0 0 2vw;
-      }
+    a {
+      font-size: 2vw;
     }
   }
 
-  .footer-bottom {
-    line-height: 1;
+  .f-0-2,
+  .f-0-3 {
+    width: 15.6vw;
+  }
+
+  .f-0-3 ul,
+  .f-0-2 ul {
+    font-size: 1.6vw;
+    line-height: 2.5vw;
+  }
+
+  .f-lbl {
+    font-size: 1.1vw;
+    line-height: 1.6vw;
+    padding: 0 0 1.2vw;
+  }
+
+  #f-0 {
+    margin: 0 0 10vw;
   }
 }
 
 @media (max-width: 500px) {
+  #f-0 {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
   #footer {
     margin: 10vw 0 0;
   }
 
   #footer-wrap {
     padding: 24vw 5.4vw 12vw;
+  }
 
-    ul {
-      width: 120vw;
-      padding: 0 0 20vw;
-      flex-wrap: wrap;
-    }
+  .f-0-1 {
+    margin: 0 0 10vw;
+  }
 
-    li {
-      width: 45%;
+  .f-0-2,
+  .f-0-3 {
+    padding: 0 0 6vw;
+  }
 
-      a {
-        padding: 0 0 6vw;
-      }
-    }
+  .f-0-3 {
+    padding: 0 0 20vw;
+  }
+  .footer-bottom {
+    flex-direction: column;
+  }
+
+  .f-lbl {
+    font-size: 5.1vw;
+    line-height: 7.6vw;
+    padding: 0 0 3.2vw;
+  }
+
+  .f-0-3 ul,
+  .f-0-2 ul {
+    font-size: 5vw;
+    line-height: 8vw;
   }
 
   .link {

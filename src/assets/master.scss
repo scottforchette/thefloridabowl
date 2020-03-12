@@ -2,13 +2,15 @@
 
 
 body.dark {
-    --bg-color: rgb(30, 33, 38);
+    --body-b-color: #111111;
+    --bg-color: #1d1d1d;
     --border-color: #e5e5e540;
     --body-color: #ced8de;
     --tag-color: #49e2b5;
 }
 
 body {
+    --body-b-color: #fff; 
     --bg-color: #fff;
     --body-color: #444;
     --border-color: #e5e5e5;

@@ -1,11 +1,14 @@
 import DefaultLayout from '~/layouts/Default.vue'
 import '~/assets/master.scss'
 import VueTimeago from 'vue-timeago'
+import InfiniteLoading from 'vue-infinite-loading'
 
 export default function (Vue, {
   head,
   router
 }) {
+  Vue.use(InfiniteLoading)
+
   Vue.component('Layout', DefaultLayout)
 
   router.afterEach((to, from) => {
