@@ -44,16 +44,10 @@
 </template>
 
 <script>
-import AOS from "aos";
 export default {
   metaInfo: {
     titleTemplate: "The Florida Bowl"
-  },
-  created() {
-    AOS.init({
-      once: true
-    });
-  },
+  }, 
   methods: {
     formatExcerpt(excerpt) {
       const blurb = excerpt.slice(0, 60).trim();

@@ -1,12 +1,20 @@
 import DefaultLayout from '~/layouts/Default.vue'
-import '~/assets/master.scss' 
+import '~/assets/master.scss'
 import InfiniteLoading from 'vue-infinite-loading'
 import VueDisqus from 'vue-disqus'
+import AOS from "aos";
+import 'aos/dist/aos.css'
 
 export default function (Vue, {
   head,
   router
 }) {
+  if (process.isClient) {
+    Vue.use(AOS.init({
+      once: true
+    }));
+  }
+
   Vue.use(InfiniteLoading)
   Vue.use(VueDisqus)
 
@@ -16,7 +24,7 @@ export default function (Vue, {
     if (process.isClient) {
       document.documentElement.removeAttribute("style");
     }
-  }) 
+  })
 
   head.link.push({
     key: 'canonical',

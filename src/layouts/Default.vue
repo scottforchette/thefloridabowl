@@ -23,7 +23,6 @@
 </template>
 
 <script>
-import 'aos/dist/aos.css'
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import G from "@mystroken/g";
@@ -32,35 +31,7 @@ export default {
   components: {
     Nav,
     Footer
-  },
-  mounted() {
-    class grid {
-      constructor() {
-        document
-          .getElementById("grid-cta")
-          .addEventListener("click", this.layout);
-      }
-
-      layout() {
-        if (this.inDom)
-          "d" === this.grid.className
-            ? (this.grid.parentNode.removeChild(this.grid), (this.inDom = !1))
-            : (this.grid.className = "d");
-        else {
-          (this.grid = document.createElement("div")), (this.grid.id = "grid");
-          var t = document.createElement("div");
-          t.id = "line";
-          for (var i = [], e = 0; e < 12; e++)
-            (i[e] = document.createElement("div")), t.appendChild(i[e]);
-          this.grid.appendChild(t),
-            document.getElementById("app").appendChild(this.grid),
-            (this.inDom = !0);
-        }
-      }
-    }
-
-    new grid();
-  }
+  } 
 };
 </script> 
 
