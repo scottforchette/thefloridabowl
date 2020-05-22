@@ -4,9 +4,9 @@ tag: VIDEO
 featured: false
 title: Can I Interest You In Watching The Perfect Possession In ...
 description: Read the UFC Rio Rancho feature on UFC bantamweight Nathaniel Wood
-video_url: ''
+video_url: https://storage.googleapis.com/webfundamentals-assets/videos/chrome.mp4
 author: Scott Forchette
-date: 2020-02-10T00:00:00-06:00
+date: 2020-02-10T06:00:00.000+00:00
 hero_image: "/src/assets/content/images/i-2.jpg"
 
 ---
