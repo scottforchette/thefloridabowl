@@ -4,7 +4,7 @@
       <header id="post-0">
         <div id="post-0-wrap">
           <div id="post-0-1">
-            <g-image :src="$page.post.hero_image" :alt="$page.post.title" />
+            <video :src="$page.post.video" controls></video>
           </div>
         </div>
         <div id="post-0-2">
@@ -258,10 +258,7 @@ query getPostData ($path: String!) {
 }
 
 #post-1-share {
-  display: flex;
-
-  a {
-  }
+  display: flex; 
 }
 
 #post-0-wrap {
@@ -276,12 +273,16 @@ query getPostData ($path: String!) {
   top: 0;
   right: 0;
   left: 0;
-  bottom: 0;
-  background: #000;
-  z-index: -1;
+  bottom: 0; 
 
   img {
     opacity: 0.6;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  video {
     position: absolute;
     height: 100%;
     width: 100%;
