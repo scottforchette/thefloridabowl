@@ -7,7 +7,7 @@ tag: UFC
 description: Read the UFC Rio Rancho feature on UFC bantamweight Nathaniel Wood
 location: Stories
 featured: false
-video_url: ''
+video_url: https://storage.googleapis.com/webfundamentals-assets/videos/chrome.mp4
 
 ---
 So all respect to the good spirits that may govern in these historians of morality! But it’s certainly a pity that they lack the historical spirit itself, that they’ve been left in the lurch by all the good spirits of history! Collectively they all think essentially unhistorically, in the traditional manner of philosophers. Of that there is no doubt. The incompetence of their genealogies of morals reveals itself at the very beginning, where the issue is to determine the origin of the idea and of the judgment “good.”
