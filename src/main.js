@@ -35,7 +35,7 @@ export default function (Vue, {
   head.meta.push({
     key: 'og:title',
     name: 'og:title',
-    content: 'More sports, more video'
+    content: 'The Florida Bowl'
   })
 
   head.meta.push({
@@ -77,7 +77,7 @@ export default function (Vue, {
   head.meta.push({
     key: 'twitter:title',
     name: 'twitter:title',
-    content: 'More sports, more video'
+    content: 'The Florida Bowl'
   })
 
   head.meta.push({
@@ -89,18 +89,18 @@ export default function (Vue, {
   head.meta.push({
     key: 'twitter:description',
     name: 'twitter:description',
-    content: 'Travel back in time and stay dripped in everything vintage. More sports, more video'
+    content: 'Untitled.'
   })
 
   head.meta.push({
     key: 'og:description',
     name: 'og:description',
-    content: 'Travel back in time and stay dripped in everything vintage. More sports, more video'
+    content: 'Untitled.'
   })
 
   head.meta.push({
     key: 'description',
     name: 'description',
-    content: 'Travel back in time and stay dripped in everything vintage. More sports, more video'
+    content: 'Untitled.'
   })
 }
