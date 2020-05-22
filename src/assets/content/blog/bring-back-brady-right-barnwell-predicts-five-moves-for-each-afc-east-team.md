@@ -5,9 +5,9 @@ featured: false
 title: Bring back Brady ... right? Barnwell predicts five moves for each AFC East
   team
 description: Read the UFC Rio Rancho feature on UFC bantamweight Nathaniel Wood
-video_url: ''
+video_url: https://storage.googleapis.com/webfundamentals-assets/videos/chrome.mp4
 author: Scott Forchette
-date: 2020-02-17T00:00:00-06:00
+date: 2020-02-17T06:00:00.000+00:00
 hero_image: "/src/assets/content/images/tom-brady-patriots.jpg"
 
 ---
