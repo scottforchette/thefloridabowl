@@ -3,33 +3,25 @@
     <header id="latest-hero">
       <h1>The Latest</h1>
     </header>
+    <div id="bg">
+      <div id="bg-orange"></div>
+    </div>
     <div id="latest-page">
       <div id="latest-wrap">
         <transition-group name="fade">
           <div v-for="{ node } of loadedPosts" :key="node.id" class="latest-card">
             <g-link :to="node.path" class="latest-card-img">
-              <g-image :src="node.hero_image" :alt="node.title" />
+              <g-image class="_img" :src="node.hero_image" :alt="node.title" />
+              <div class="latest-card-date">
+                <span>{{node.date}}</span>
+              </div>
             </g-link>
-            <div class="latest-card-header">
-              <div class="meta">
-                <div class="tag">
-                  <span>{{node.tag}}</span>
-                </div>
-                <div class="date">
-                  <timeago :since="node.date" :datetime="node.date" />
-                </div>
-              </div>
-              <g-link class="index-m-title" :to="node.path">
-                <h2>{{node.title}}</h2>
-              </g-link>
-              <div class="index-m-info">
-                <span>{{node.author}}</span>
-              </div>
-            </div>
+            <g-link class="latest-m-title" :to="node.path">
+              <h2>{{node.title}}</h2>
+            </g-link>
           </div>
         </transition-group>
       </div>
-
       <ClientOnly>
         <infinite-loading @infinite="infiniteHandler" spinner="spiral">
           <div slot="no-more" class="mt-2">You've reached all the posts.</div>
@@ -58,7 +50,7 @@ query Blog($page: Int) {
                 author
                 path
                 hero_image (quality: 80)
-                date  (format: "MMMM DD YYYY")
+                date  (format: "DD.YY")
 			}
 		}
 	}
@@ -120,13 +112,9 @@ export default {
 }
 
 #latest-wrap {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-
   @media (min-width: 501px) {
-    width: 70vw;
-    margin: 0 auto;
+    width: 93.5vw;
+    margin: 0 0 0 3.25vw;
     padding: 0 0 5vw;
   }
 
@@ -137,91 +125,24 @@ export default {
   }
 
   > span {
-    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    overflow: hidden;
   }
 }
 
 .latest-card {
-  display: flex;
   position: relative;
+  height: 42.5vw;
   overflow: hidden;
-  background: var(--bg-color);
-  box-shadow: 0 2px 20px 2px rgba(0, 0, 0, 0.1);
-  transition: background 0.6s;
-
+  width: 28.25vw;
+  margin: 0 0 3vw;
   @media (min-width: 501px) {
-    height: 20vw;
-    width: 100%;
-    margin: 0 0 2.5vw;
-
-    .latest-card-img {
-      height: 100%;
-      width: 35vw;
-    }
   }
 
   @media (max-width: 500px) {
-    flex-direction: column;
-    height: 110vw;
-    width: 100%;
-    margin: 0 0 7.5vw;
-
-    .latest-card-img {
-      height: 60vw;
-      width: 100%;
-    }
   }
-
-  .latest-card-img {
-    position: relative;
-    overflow: hidden;
-
-    img {
-      position: absolute;
-      object-fit: cover;
-      height: 100%;
-      width: 100%;
-    }
-  }
-}
-
-.latest-card-header {
-  @media (min-width: 501px) {
-    width: 100%;
-    padding: 1.6vw 2vw;
-
-    .index-m-title {
-      font-size: 2.3vw;
-      line-height: 1.3;
-      letter-spacing: 0.04vw;
-      margin: 0 0 1.4vw;
-    }
-  }
-
-  @media (max-width: 500px) {
-    padding: 4vw;
-    .index-m-title {
-      font-size: 5.5vw;
-      letter-spacing: 0.09vw;
-      line-height: 1.3;
-      margin: 0 0 3vw;
-    }
-  }
-}
-
-.latest-card-header .meta {
-  @media (min-width: 501px) {
-    padding: 0 0 2vw;
-  }
-
-  @media (max-width: 500px) {
-    padding: 0 0 4vw;
-  }
-}
-
-.index-m-info {
-  opacity: 0.7;
-  line-height: 1;
 }
 
 #latest-hero {
@@ -244,5 +165,39 @@ export default {
       font-size: 12vw;
     }
   }
+}
+
+#bg {
+  position: absolute;
+  top: 29vw;
+  right: 0;
+  height: 100vh;
+  width: 56vw;
+  background: linear-gradient(
+    180deg,
+    rgba(190, 108, 77, 0.8981967787114846) 9%,
+    rgba(255, 44, 0, 0) 74%
+  );
+}
+
+.latest-card-img {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 35vw;
+}
+
+.latest-card-date {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1vw 0 0 1vw;
+  font-size: 3vw;
+  color: #fff;
+}
+
+.latest-m-title {
+      padding: 1vw 0 0 0;
+    font-size: 2vw;
 }
 </style>

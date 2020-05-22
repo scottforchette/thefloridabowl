@@ -6,10 +6,10 @@
           <div id="post-0-1">
             <g-image :src="$page.post.hero_image" :alt="$page.post.title" />
           </div>
-          <div id="post-0-2">
-            <div class="headline">
-              <h1>{{ $page.post.title }}</h1>
-            </div>
+        </div>
+        <div id="post-0-2">
+          <div class="headline">
+            <h1>{{ $page.post.title }}</h1>
           </div>
         </div>
       </header>
@@ -77,7 +77,6 @@ export default {
     };
   },
   computed: {
-    
     em() {
       var subject = this.$page.post.title,
         body =
@@ -171,15 +170,13 @@ query getPostData ($path: String!) {
 
 @media (min-width: 501px) {
   #post-0 {
-    height: 50vw;
-
     .headline {
-      width: 50vw;
+      width: 70vw;
     }
   }
   #post-1-share {
     display: flex;
-      margin: 8vw 0 0;
+    margin: 8vw 0 0;
 
     a {
       margin: 0 2vw 0 0;
@@ -210,6 +207,10 @@ query getPostData ($path: String!) {
       margin: 0 0 4vw;
     }
   }
+
+  #disqus_thread {
+    padding: 7.5vw 0 0;
+  }
 }
 
 @media (max-width: 500px) {
@@ -220,9 +221,10 @@ query getPostData ($path: String!) {
       padding: 0 3vw;
     }
   }
+
   #post-1-share {
     display: flex;
-      margin: 8vw 0 0;
+    margin: 8vw 0 0;
 
     a {
       margin: 0 2vw 0 0;
@@ -233,23 +235,26 @@ query getPostData ($path: String!) {
     padding: 6vw 0 12vw;
     margin: 0 auto;
     width: 90vw;
-  } 
+  }
+
+  #disqus_thread {
+    padding: 15vw 0 0;
+  }
 
   #post-1-content {
-     p {
-    font-size: 5vw;
-    line-height: 8.5vw;
-    margin: 0 0 6vw;
-}
+    p {
+      font-size: 5vw;
+      line-height: 8.5vw;
+      margin: 0 0 6vw;
+    }
 
     h1 {
-    font-size: 6.28019vw;
-    line-height: 9.66184vw;
-    margin: 10.54762vw 0;
-}
+      font-size: 6.28019vw;
+      line-height: 9.66184vw;
+      margin: 10.54762vw 0;
+    }
   }
 }
-
 
 #post-1-share {
   display: flex;
@@ -259,11 +264,10 @@ query getPostData ($path: String!) {
 }
 
 #post-0-wrap {
-  height: 100%;
+  position: relative;
+  height: 50vw;
   width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  overflow: hidden;
 }
 
 #post-0-1 {
@@ -285,11 +289,17 @@ query getPostData ($path: String!) {
 }
 
 #post-0-2 {
-  color: #fff;
-  text-align: center;
+  margin: 6vw 0 0;
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
+  font-size: 4vw;
+}
+
+#post {
+  position: relative;
+  padding: 17.5vw 0 0 3.25vw;
+  width: 93.5vw;
 }
 </style>

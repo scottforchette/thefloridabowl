@@ -1,13 +1,14 @@
 import DefaultLayout from '~/layouts/Default.vue'
-import '~/assets/master.scss'
-import VueTimeago from 'vue-timeago'
+import '~/assets/master.scss' 
 import InfiniteLoading from 'vue-infinite-loading'
+import VueDisqus from 'vue-disqus'
 
 export default function (Vue, {
   head,
   router
 }) {
   Vue.use(InfiniteLoading)
+  Vue.use(VueDisqus)
 
   Vue.component('Layout', DefaultLayout)
 
@@ -15,11 +16,7 @@ export default function (Vue, {
     if (process.isClient) {
       document.documentElement.removeAttribute("style");
     }
-  })
-
-  Vue.use(VueTimeago, {
-    name: 'timeago',
-  })
+  }) 
 
   head.link.push({
     key: 'canonical',

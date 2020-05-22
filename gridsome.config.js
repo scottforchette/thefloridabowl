@@ -26,6 +26,19 @@ module.exports = {
         }],
         searchFields: ['title']
       }
-    }
+    },
+    {
+      use: '@gridsome/plugin-google-analytics',
+      options: {
+        id: 'UA-167319742-1'
+      }
+    },
+    {
+      use: '@gridsome/plugin-sitemap',
+      options: { 
+        exclude: ['/404'] 
+      }
+    },
+    'gridsome-plugin-robots'
   ]
 }

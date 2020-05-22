@@ -85,7 +85,7 @@ export default {
   background: transparent;
 
   span {
-      color: var(--body-color)
+    color: var(--body-color);
   }
   @media (min-width: 501px) {
     span {
@@ -127,6 +127,20 @@ export default {
     width: 92vw;
     margin: 0 auto;
     padding: 0 0 5vw;
+  }
+}
+
+#contact-form-e {
+  input[type="text"],
+  .test select {
+    width: 100%;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 1px 3px #ddd;
+    border-radius: 4px; 
+    box-sizing: border-box;
+    padding-bottom: 5vw 9vw; 
   }
 }
 </style>
