@@ -1,16 +1,18 @@
- 
+ body.dark {
+     --bg-line: #fff;
+     --bg-border: rgba(256, 256, 256, 0.05);
+     --svg-color: #fff; --body-b-color: #111111;
+     --bg-color: #1d1d1d;
+     --border-color: #e5e5e540;
+     --body-color: #ced8de;
+ }
 
-
-body.dark {
-    --body-b-color: #111111;
-    --bg-color: #1d1d1d;
-    --border-color: #e5e5e540;
-    --body-color: #ced8de; 
-}
-
-body {
-    --body-b-color: #fff; 
-    --bg-color: #fff;
-    --body-color: #444;
-    --border-color: #e5e5e5; 
-} 
+ body {
+     --bg-border: rgba(0, 0, 0, 0.05);
+     --svg-color: #000;
+     --bg-line: #000;
+     --body-b-color: #fff;
+     --bg-color: #fff;
+     --body-color: #444;
+     --border-color: #e5e5e5;
+ }

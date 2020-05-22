@@ -16,6 +16,7 @@
       <div id="post-1">
         <div id="post-1-wrap">
           <div id="post-1-content" v-html="$page.post.content" />
+          <vue-disqus shortname="https-sportstunl-netlify-com" :identifier="$page.post.title"></vue-disqus>
 
           <div id="post-1-extra">
             <div id="post-1-share">

@@ -1,6 +1,6 @@
 <template>
   <Layout>
-    <div id="latest">
+    <div id="latest" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
       <div>
         <div>TRENDING +</div>
       </div>
@@ -18,14 +18,14 @@
         </li>
       </ul>
     </div>
-    <div id="brand">
+    <div id="brand" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
       <div id="b-0">WITHOUT OUR MUSE WE ARE NOTHING</div>
       <div id="b-1">
         <p class="_sm">Throughout the years, we have collaborated with most key ladies in the field</p>
         <p class="_sm">WE ARE KNOWN FOR OUR ABILITY TO DISCOVER NEW TALENTS</p>
       </div>
     </div>
-    <div id="all">
+    <div id="all" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
       <ul class="_latest-ul">
         <li v-for="edge in $page.content.edges" :key="edge.node.id">
           <g-link class="_latest-img" :to="edge.node.path">
@@ -39,14 +39,20 @@
           </g-link>
         </li>
       </ul>
-    </div> 
+    </div>
   </Layout>
 </template>
 
 <script>
+import AOS from "aos";
 export default {
-  metaInfo: { 
+  metaInfo: {
     titleTemplate: "The Florida Bowl"
+  },
+  created() {
+    AOS.init({
+      once: true
+    });
   },
   methods: {
     formatExcerpt(excerpt) {
@@ -156,6 +162,16 @@ export default {
     width: 26.35vw;
     margin: 0 2vw 0 0;
   }
+
+  @media (max-width: 500px) {
+    flex-direction: column;
+    padding: 35vw 0 0 3.25vw;
+    width: 93.5vw;
+
+    > div {
+      margin: 0 0 5vw 0;
+    }
+  }
 }
 
 ._spacer {
@@ -173,6 +189,16 @@ export default {
     overflow: hidden;
     width: 30.25vw;
   }
+
+  @media (max-width: 500px) {
+    flex-direction: column;
+    width: 100%;
+
+    li {
+      height: 90vw;
+      width: 100%;
+    }
+  }
 }
 
 ._latest-img {
@@ -180,6 +206,10 @@ export default {
   position: relative;
   width: 100%;
   height: 35vw;
+
+  @media (max-width: 500px) {
+    height: 65vw;
+  }
 }
 
 ._latest-date {
@@ -189,11 +219,21 @@ export default {
   padding: 1vw 0 0 1vw;
   font-size: 3vw;
   color: #fff;
+
+  @media (max-width: 500px) {
+    padding: 3vw 0 0 3vw;
+    font-size: 7vw;
+  }
 }
 
 ._latest-title {
   padding: 1vw 0 0 0;
   font-size: 2vw;
+
+  @media (max-width: 500px) {
+    padding: 3vw 0 0 0;
+    font-size: 6vw;
+  }
 }
 
 #brand {
@@ -246,7 +286,12 @@ export default {
 
     li {
       width: 28.25vw;
-      margin: 0 0 3vw
+      margin: 0 0 3vw;
+
+      @media (max-width: 500px) {
+        width: 100%;
+        margin: 0 0 3vw;
+      }
     }
   }
 }

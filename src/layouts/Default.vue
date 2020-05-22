@@ -7,12 +7,23 @@
         <Footer />
       </div>
     </main>
-    <div id="issue">Please turn your device.</div>
-    <div id="grid-cta"></div>
+    <div id="menu">
+      <div id="menu-bg"></div>
+      <ul>
+        <li>
+          <g-link class="menu-li" to="/latest">Latest</g-link>
+        </li>
+        <li>
+          <g-link class="menu-li" to="/contact">Contact</g-link>
+        </li>
+      </ul>
+    </div>
+    <div id="issue">Please turn your device.</div> 
   </div>
 </template>
 
 <script>
+import 'aos/dist/aos.css'
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import G from "@mystroken/g";
@@ -226,6 +237,61 @@ html {
     width: 4vw;
     height: 100%;
     background: #000;
+  }
+}
+
+#menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+
+  ul {
+    position: relative;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+
+    li {
+      font-size: 10vw;
+      letter-spacing: -0.4vw;
+      line-height: 13vw;
+      overflow: hidden;
+
+      &:first-child {
+        margin: -1.77778vw 0 0;
+      }
+
+      &:not(:first-child) {
+        margin: -1.26984vw 0 0;
+      }
+    }
+  }
+}
+
+#menu-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  opacity: 0;
+  background: var(--body-b-color);
+}
+
+.menu-li {
+  position: relative;
+  transform: translate3d(0, 102%, 0);
+  transition: opacity 0.4s;
+
+  &.on,
+  &:hover {
+    opacity: 0.1;
   }
 }
 </style>
