@@ -216,11 +216,7 @@ query getPostData ($path: String!) {
 
 @media (max-width: 500px) {
   #post-0 {
-    height: 112vw;
-
-    .headline {
-      padding: 0 3vw;
-    }
+    margin: 10vw 0 0; 
   }
 
   #post-1-share {
@@ -258,7 +254,7 @@ query getPostData ($path: String!) {
 }
 
 #post-1-share {
-  display: flex; 
+  display: flex;
 }
 
 #post-0-wrap {
@@ -274,14 +270,6 @@ query getPostData ($path: String!) {
   right: 0;
   left: 0;
   bottom: 0; 
-
-  img {
-    opacity: 0.6;
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-  }
   video {
     position: absolute;
     height: 100%;
@@ -297,11 +285,19 @@ query getPostData ($path: String!) {
   flex-direction: column;
   justify-content: center;
   font-size: 4vw;
+
+  @media (max-width: 500px) {
+    font-size: 9vw;
+  }
 }
 
 #post {
   position: relative;
   padding: 17.5vw 0 0 3.25vw;
   width: 93.5vw;
+}
+
+.headline {
+  line-height: 1.2;
 }
 </style>
