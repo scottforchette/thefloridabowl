@@ -23,11 +23,11 @@
 #footer {
   background: #000;
 
-  > div { 
+  > div {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100%; 
+    height: 100%;
   }
 
   a {
@@ -46,8 +46,14 @@
   }
 
   @media (max-width: 500px) {
-     margin: 20vw 0 0;
+    margin: 20vw 0 0;
     height: 20vw;
+
+    ._svg {
+      margin: 0 4vw;
+      width: 6vw;
+      height: 6vw;
+    }
   }
 
   svg {

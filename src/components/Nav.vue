@@ -145,6 +145,10 @@ export default {
     }
   }
 
+  @media (max-width: 500px) {
+    overflow: auto;
+  }
+
   ul ul {
     li {
       @media (min-width: 501px) {

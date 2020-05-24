@@ -47,7 +47,7 @@
 export default {
   metaInfo: {
     titleTemplate: "The Florida Bowl"
-  }, 
+  },
   methods: {
     formatExcerpt(excerpt) {
       const blurb = excerpt.slice(0, 60).trim();
@@ -234,6 +234,10 @@ export default {
   margin: 6vw 0 0 0;
   position: relative;
   height: 25vw;
+
+  @media (max-width: 500px) {
+    display: none;
+  }
 }
 
 #b-0 {
@@ -245,7 +249,7 @@ export default {
   line-height: 5.25vw;
   width: 41vw;
   opacity: 0.1;
-  text-align: center;
+  text-align: center; 
 }
 
 #b-1 {
@@ -265,10 +269,16 @@ export default {
       margin: 0vw 25vw 0 0;
     }
   }
+ 
 }
 
 ._sm {
   font-size: 1.6vw;
+
+  @media (max-width: 500px) {
+         font-size: 5vw;
+
+      }
 }
 
 #all {

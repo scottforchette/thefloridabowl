@@ -129,19 +129,31 @@ export default {
     flex-wrap: wrap;
     justify-content: space-between;
     overflow: hidden;
+
+    @media (max-width: 500px) {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+      overflow: hidden;
+    }
   }
 }
 
 .latest-card {
   position: relative;
-  height: 42.5vw;
-  overflow: hidden;
-  width: 28.25vw;
-  margin: 0 0 3vw;
+
   @media (min-width: 501px) {
+    height: 42.5vw;
+    overflow: hidden;
+    width: 28.25vw;
+    margin: 0 0 3vw;
   }
 
   @media (max-width: 500px) {
+    height: 120.5vw;
+    overflow: hidden;
+    width: 100%;
+    margin: 0 0 8vw;
   }
 }
 
@@ -178,6 +190,13 @@ export default {
     rgba(190, 108, 77, 0.8981967787114846) 9%,
     rgba(255, 44, 0, 0) 74%
   );
+  z-index: -1;
+
+  @media (max-width: 500px) {
+    top: 61vw;
+    height: 100vh;
+    width: 79vw;
+  }
 }
 
 .latest-card-img {
@@ -185,6 +204,11 @@ export default {
   position: relative;
   width: 100%;
   height: 35vw;
+
+  @media (max-width: 500px) {
+      height: 75vw;
+
+  }
 }
 
 .latest-card-date {
@@ -194,10 +218,21 @@ export default {
   padding: 1vw 0 0 1vw;
   font-size: 3vw;
   color: #fff;
+
+  @media (max-width: 500px) {
+    padding: 3vw 0 0 3vw;
+  font-size: 8vw;
+  }
 }
 
 .latest-m-title {
-      padding: 1vw 0 0 0;
-    font-size: 2vw;
+  padding: 1vw 0 0 0;
+  font-size: 2vw;
+
+  @media (max-width: 500px) {
+    padding: 3vw 0 0 0;
+  font-size: 8vw;
+
+  }
 }
 </style>

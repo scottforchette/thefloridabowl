@@ -1,45 +1,20 @@
 <template>
   <Layout>
-    <header id="contact-hero">
-      <h1>Contact Us</h1>
-    </header>
-    <div id="contact-form">
-      <form
-        id="contact-form-e"
-        name="contact"
-        method="post"
-        action="/"
-        v-on:submit.prevent="handleSubmit"
-        data-netlify="true"
-        data-netlify-honeypot="bot-field"
-      >
-        <input type="hidden" name="form-name" value="contact" />
-        <p hidden>
-          <label>
-            Don’t fill this out:
-            <input name="bot-field" />
-          </label>
-        </p>
-        <div class="sender-info">
-          <div>
-            <label for="name" class="label">Your name</label>
-            <input type="text" name="name" v-model="formData.name" />
+    <div id="contact">
+      <div id="contact-0">
+        <div class="_c-0">
+          <div class="_c-img-0">
+            <g-image src="~/assets/img/1.jpg"></g-image>
           </div>
-          <div>
-            <label for="email">Your email</label>
-            <input type="email" name="email" v-model="formData.email" />
+          <div class="_c-img-1">
+            <g-image src="~/assets/img/2.jpg"></g-image>
           </div>
         </div>
-
-        <div class="message-wrapper">
-          <label for="message">Message</label>
-          <textarea name="message" v-model="formData.message"></textarea>
-        </div>
-
-        <button type="submit" class="button">
-          <span>Submit</span>
-        </button>
-      </form>
+      </div>
+      <div id="contact-1">
+        <h2>Drop us a Line</h2>
+        <a href="mailto:contact@thefloridabowl.com">contact@thefloridabowl.com</a>
+      </div>
     </div>
   </Layout>
 </template>
@@ -48,99 +23,85 @@
 export default {
   metaInfo: {
     title: "Contact Us"
-  },
-  data() {
-    return {
-      formData: {}
-    };
-  },
-  methods: {
-    encode(data) {
-      return Object.keys(data)
-        .map(
-          key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
-        )
-        .join("&");
-    },
-    handleSubmit(e) {
-      fetch("/", {
-        method: "POST",
-        headers: { "Content-Type": "application/x-www-form-urlencoded" },
-        body: this.encode({
-          "form-name": e.target.getAttribute("name"),
-          ...this.formData
-        })
-      })
-        .then(() => this.$router.push("/"))
-        .catch(error => alert(error));
-    }
   }
 };
 </script>
 
 <style lang="scss">
-.button {
-  cursor: pointer;
-  outline: 0;
-  background: transparent;
-
-  span {
-    color: var(--body-color);
-  }
-  @media (min-width: 501px) {
-    span {
-      font-size: 1.2vw;
-    }
-  }
-}
-
-#contact-hero {
+#contact {
+  margin: 20vw 0 0;
+  height: 62.5vw;
+  position: relative;
   display: flex;
-  justify-content: center;
-  align-items: center;
-
-  @media (min-width: 501px) {
-    margin: 18vw 0 0;
-
-    h1 {
-      font-size: 6vw;
-    }
-  }
 
   @media (max-width: 500px) {
+    height: 153vw;
     margin: 40vw 0 0;
+    flex-direction: column;
+  }
+}
 
-    h1 {
-      font-size: 12vw;
+#contact-0 {
+  position: relative;
+  width: 50%;
+}
+
+#contact-1 {
+  position: relative;
+  margin: 10vw 0 0 6vw;
+h2 {
+    font-size: 4vw;
+  }
+
+  a {
+    margin: 4vw 0 0 0;
+    font-size: 2.5vw;
+  }
+  @media (max-width: 500px) {
+    margin: 110vw 0 0 3.26vw;
+
+    h2 {
+      font-size: 8vw;
+    }
+
+    a {
+      margin: 12vw 0 0 0;
+      font-size: 5vw;
     }
   }
+  
 }
 
-#contact-form {
-  @media (min-width: 501px) {
-    width: 60vw;
-    margin: 0 auto;
-    padding: 10vw 0 5vw;
-  }
+._c-img-0 {
+  position: absolute;
+  left: 5vw;
+  top: 10vw;
+  height: 43vw;
+  width: 29.5vw;
 
   @media (max-width: 500px) {
-    width: 92vw;
-    margin: 0 auto;
-    padding: 0 0 5vw;
+    height: 73vw;
+    width: 51.5vw;
   }
 }
 
-#contact-form-e {
-  input[type="text"],
-  .test select {
+.c-0 {
+  @media (max-width: 500px) {
     width: 100%;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    box-shadow: inset 0 1px 3px #ddd;
-    border-radius: 4px; 
-    box-sizing: border-box;
-    padding-bottom: 5vw 9vw; 
+    height: 60vw;
+  }
+}
+
+._c-img-1 {
+  position: absolute;
+  left: 9vw;
+  top: 3vw;
+  height: 26vw;
+  width: 35.5vw;
+
+  @media (max-width: 500px) {
+    height: 43vw;
+    width: 68.5vw;
   }
 }
 </style>
