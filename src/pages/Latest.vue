@@ -187,8 +187,8 @@ export default {
   width: 56vw;
   background: linear-gradient(
     180deg,
-    rgba(190, 108, 77, 0.8981967787114846) 9%,
-    rgba(255, 44, 0, 0) 74%
+    rgba(223, 110, 1, 0.8981967787114846) 6%,
+    rgba(249, 126, 9, 0) 76%
   );
   z-index: -1;
 
@@ -206,8 +206,7 @@ export default {
   height: 35vw;
 
   @media (max-width: 500px) {
-      height: 75vw;
-
+    height: 75vw;
   }
 }
 
@@ -221,7 +220,7 @@ export default {
 
   @media (max-width: 500px) {
     padding: 3vw 0 0 3vw;
-  font-size: 8vw;
+    font-size: 8vw;
   }
 }
 
@@ -231,8 +230,7 @@ export default {
 
   @media (max-width: 500px) {
     padding: 3vw 0 0 0;
-  font-size: 8vw;
-
+    font-size: 8vw;
   }
 }
 </style>

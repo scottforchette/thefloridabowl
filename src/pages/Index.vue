@@ -2,7 +2,7 @@
   <Layout>
     <div id="latest" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
       <div>
-        <div>TRENDING +</div>
+        <div>FEATURED +</div>
       </div>
       <ul class="_latest-ul">
         <li v-for="edge in $page.stories.edges" :key="edge.node.id">
@@ -19,11 +19,8 @@
       </ul>
     </div>
     <div id="brand" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
-      <div id="b-0">WITHOUT OUR MUSE WE ARE NOTHING</div>
-      <div id="b-1">
-        <p class="_sm">Throughout the years, we have collaborated with most key ladies in the field</p>
-        <p class="_sm">WE ARE KNOWN FOR OUR ABILITY TO DISCOVER NEW TALENTS</p>
-      </div>
+      <div id="b-0">WELCOME TO THE BLOG</div>
+     
     </div>
     <div id="all" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
       <ul class="_latest-ul">

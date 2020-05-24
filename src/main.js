@@ -89,18 +89,18 @@ export default function (Vue, {
   head.meta.push({
     key: 'twitter:description',
     name: 'twitter:description',
-    content: 'Untitled.'
+    content: 'The Florida Bowl serves sports and pop culture the right way. Consume responsibly.'
   })
 
   head.meta.push({
     key: 'og:description',
     name: 'og:description',
-    content: 'Untitled.'
+    content: 'The Florida Bowl serves sports and pop culture the right way. Consume responsibly.'
   })
 
   head.meta.push({
     key: 'description',
     name: 'description',
-    content: 'Untitled.'
+    content: 'The Florida Bowl serves sports and pop culture the right way. Consume responsibly.'
   })
 }

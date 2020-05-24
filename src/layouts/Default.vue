@@ -37,10 +37,10 @@ export default {
 
 <style lang="scss">
 @font-face {
-  font-family: NMM;
+  font-family: Plain;
   font-weight: 300;
   font-style: normal;
-  src: url("../assets/font/NMM.woff2") format("woff2");
+  src: url("../assets/font/PR.woff2") format("woff2");
 }
 
 html {
@@ -119,7 +119,7 @@ svg {
 }
 
 html {
-  font-family: NMM;
+  font-family: Plain;
   cursor: default;
   -webkit-tap-highlight-color: transparent;
   line-height: 1;
