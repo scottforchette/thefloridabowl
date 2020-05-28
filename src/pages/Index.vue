@@ -2,7 +2,7 @@
   <Layout>
     <div id="latest" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
       <div>
-        <div>FEATURED +</div>
+        <div>Trending +</div>
       </div>
       <ul class="_latest-ul">
         <li v-for="edge in $page.stories.edges" :key="edge.node.id">
