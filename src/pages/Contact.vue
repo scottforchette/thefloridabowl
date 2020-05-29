@@ -4,10 +4,10 @@
       <div id="contact-0">
         <div class="_c-0">
           <div class="_c-img-0">
-            <g-image src="~/assets/img/0.jpg"></g-image>
+            <g-image src="~/assets/content/images/igor-son-FV_PxCqgtwc-unsplash.jpg"></g-image>
           </div>
           <div class="_c-img-1">
-            <g-image src="~/assets/content/images/igor-son-FV_PxCqgtwc-unsplash.jpg"></g-image>
+            <g-image src="~/assets/img/0.jpg"></g-image>
           </div>
         </div>
       </div>
