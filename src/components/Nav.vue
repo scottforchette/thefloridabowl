@@ -16,7 +16,7 @@
             <div v-else>DARK MODE</div>
           </li>
           <li>
-            <g-link to="/latest">Blog</g-link>
+            <g-link to="/blog">BLOG</g-link>
           </li>
         </ul>
       </li>
