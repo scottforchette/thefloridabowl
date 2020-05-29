@@ -11,7 +11,7 @@
       <div id="menu-bg"></div>
       <ul>
         <li>
-          <g-link class="menu-li" to="/latest">Latest</g-link>
+          <g-link class="menu-li" to="/blog">Blog</g-link>
         </li>
         <li>
           <g-link class="menu-li" to="/contact">Contact</g-link>

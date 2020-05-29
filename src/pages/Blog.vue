@@ -1,7 +1,7 @@
 <template>
   <Layout>
     <header id="latest-hero">
-      <h1>The Latest</h1>
+      <h1>The Blog</h1>
     </header>
     <div id="bg">
       <div id="bg-orange"></div>
@@ -60,7 +60,7 @@ query Blog($page: Int) {
 <script>
 export default {
   metaInfo: {
-    title: "Latest"
+    title: "Blog"
   },
   data() {
     return {
@@ -76,7 +76,7 @@ export default {
       if (this.currentPage + 1 > this.$page.posts.pageInfo.totalPages) {
         $state.complete();
       } else {
-        const { data } = await this.$fetch(`/latest/${this.currentPage + 1}`);
+        const { data } = await this.$fetch(`/blog/${this.currentPage + 1}`);
         if (data.posts.edges.length) {
           this.currentPage = data.posts.pageInfo.currentPage;
           this.loadedPosts.push(...data.posts.edges);
