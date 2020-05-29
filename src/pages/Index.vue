@@ -19,7 +19,7 @@
       </ul>
     </div>
     <div id="brand" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
-      <div id="b-0">WELCOME TO THE BLOG</div>
+      <div id="b-0">THE LATEST</div>
      
     </div>
     <div id="all" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
