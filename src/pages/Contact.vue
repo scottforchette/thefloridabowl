@@ -4,15 +4,15 @@
       <div id="contact-0">
         <div class="_c-0">
           <div class="_c-img-0">
-            <g-image src="~/assets/img/1.jpg"></g-image>
+            <g-image src="~/assets/img/0.jpg"></g-image>
           </div>
           <div class="_c-img-1">
-            <g-image src="~/assets/img/2.jpg"></g-image>
+            <g-image src="~/assets/content/images/igor-son-FV_PxCqgtwc-unsplash.jpg"></g-image>
           </div>
         </div>
       </div>
       <div id="contact-1">
-        <h2>Drop us a Line</h2>
+        <h2>Drop Us A Line</h2>
         <a href="mailto:contact@thefloridabowl.com">contact@thefloridabowl.com</a>
       </div>
     </div>
