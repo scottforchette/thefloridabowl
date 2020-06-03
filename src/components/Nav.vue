@@ -5,7 +5,11 @@
       <li class="_nav-li">
         <ul>
           <li>
-            <g-link to="/">THE FLORIDA BOWL</g-link>
+            <g-link to="/" id="nav-logo">
+              <g-image v-if="mode" src="~/assets/img/logo/dark.png" alt="The Florida Bowl" />
+
+              <g-image v-else src="~/assets/img/logo/light.png" alt="The Florida Bowl" />
+            </g-link>
           </li>
         </ul>
       </li>
@@ -149,7 +153,7 @@ export default {
     overflow: auto;
   }
 
-  ul ul {
+  ul li:last-child {
     li {
       @media (min-width: 501px) {
         transition: background 0.6s;
@@ -164,12 +168,7 @@ export default {
   &:first-child {
     width: 26.35vw;
     margin: 0 2vw 0 0;
-
-    @media (max-width: 500px) {
-      width: 100%;
-      margin: 5vw 0 0 0;
-      font-size: 6vw;
-    }
+ 
   }
 
   &:last-child {
@@ -211,4 +210,17 @@ export default {
     fill: var(--svg-color);
   }
 }
+
+#nav-logo {
+  @media (min-width: 501px) {
+    width: 12vw;
+  }
+
+  @media (max-width: 500px) {
+    width: 24vw;
+    padding: 0 0 5vw;
+
+  }
+}
 </style>
+
