@@ -76,5 +76,3 @@ fields:
 - type: file
   name: hero_image
   label: Cover
-pages:
-- src/assets/content/blog/ne-te-quaesiveris-extra.md
