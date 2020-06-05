@@ -77,9 +77,7 @@ fields:
   name: hero_image
   label: Cover
 pages:
-- src/assets/content/blog/an-essay-on-walking.md
 - src/assets/content/blog/bring-back-brady-right-barnwell-predicts-five-moves-for-each-afc-east-team-1.md
-- src/assets/content/blog/bring-back-brady-right-barnwell-predicts-five-moves-for-each-afc-east-team-2.md
 - src/assets/content/blog/ne-te-quaesiveris-extra.md
 - src/assets/content/blog/song-of-myself.md
 - src/assets/content/blog/team-giannis-and-team-lebron-go-back-and-forth-in-epic-fourth-quarter.md
