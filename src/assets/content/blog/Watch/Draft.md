@@ -18,8 +18,8 @@ What an emotional and difficult time to launch a sports and pop culture blog. Bu
 
 So I want to use this platform (with no one on it) to not only share what's going on with the current state of our country and the world as we know it. But also maybe we can talk shit and share a few laughs while we are at it. And although there is no sports and the world has stopped for the time being, the show must go on.
 
-We appreciate every reader that accidentally stumbles upon our website and every hater that came just to make fun of us.   
-  
-One Love,  
-  
-Welcome to The Florida Bowl
+We appreciate every reader that accidentally stumbles upon our website and every hater that came just to make fun of us.
+
+One Love,
+
+TFB
