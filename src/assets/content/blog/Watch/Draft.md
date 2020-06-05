@@ -1,15 +1,19 @@
 ---
 location: Content
-tag: ''
+tag: TRENDING
 featured: true
 title: ''
 description: ''
 video_url: ''
-author: Nathan Rapaka
+author: Scott Forchette
 date: 
-hero_image: ''
+hero_image: "/src/assets/content/images/blm_logo.jpg"
 
 ---
-What a difficult time to start a sports and pop culture blog. Ive been planning for a while on how exactly I wanted to roll the new site out. But after spending a long time contemplating, I realized that there will not be a perfect time. I wanted to wait for things to blow over but It seems like things are far from it.  
+![](/src/assets/content/images/blm_logo.jpg)
+
+What an emotional and difficult time to launch a sports and pop culture blog. But Ive been planning for a while on how exactly I wanted to roll out the new site. But after spending a some time contemplating, I realized that there will not be a perfect time. 
+
+After giving this more thought, I want to use this platform (with no one on it) to not only share whats going on with the current state of the country/world but maybe we can talk shit and share a few laughs while we are at it. And although there is no sports and the world has stopped for the time being, the show must go on.  
   
-So after giving this more thought, I want to use this platform (with no one on it) to not only share whats going on with the current state of the world/country but I spread a few laughs while we are at it. And although there is no sports and the world has stopped for the time being, the show must go on. 
+We appreciate every reader that accidentally stumbled upon our website and every hater that came just to make fun of us. So without further ado, welcome to the Florida Bowl!
