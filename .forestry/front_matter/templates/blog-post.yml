@@ -76,3 +76,5 @@ fields:
 - type: file
   name: hero_image
   label: Cover
+pages:
+- src/assets/content/blog/Watch/Draft.md
