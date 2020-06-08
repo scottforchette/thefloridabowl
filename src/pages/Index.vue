@@ -5,7 +5,7 @@
         <div>Featured +</div>
       </div>
       <ul class="_latest-ul">
-        <li v-for="edge in $page.stories.edges" :key="edge.node.id">
+        <li v-for="edge in $page.featured.edges" :key="edge.node.id">
           <g-link class="_latest-img" :to="edge.node.path">
             <g-image :src="edge.node.hero_image" :alt="edge.node.title" />
             <div class="_latest-date">
@@ -58,7 +58,7 @@ export default {
 
 <page-query>
  {  
-    latest: allBlog(limit: 2, filter: { location: { in: ["Content"] }, featured: { eq: true }}) {
+    featured: allBlog(limit: 2, filter: { location: { in: ["Content"] }, featured: { eq: true }}) {
         edges {
             node {
                 id
