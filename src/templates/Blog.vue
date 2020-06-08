@@ -4,7 +4,7 @@
       <header id="post-0">
         <div id="post-0-wrap">
           <div id="post-0-1">
-            <video :src="$page.post.video" controls></video>
+            <video :src="$page.post.video" controls/> 
           </div>
         </div>
         <div id="post-0-2">
@@ -127,7 +127,7 @@ query getPostData ($path: String!) {
         date 
         author
         content
-        video
+        video_url
         path
         tag
         description
