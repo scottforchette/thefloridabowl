@@ -2,7 +2,7 @@
   <Layout>
     <article id="post">
       <header id="post-0">
-        <div id="post-0-wrap">
+        <div id="post-0-wrap" v-if="$page.post.video">
           <div id="post-0-1">
             <video :src="$page.post.video" controls/> 
           </div>
