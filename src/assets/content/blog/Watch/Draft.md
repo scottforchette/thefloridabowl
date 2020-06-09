@@ -2,13 +2,13 @@
 location: Content
 tag: TRENDING
 featured: true
-title: The Show Must Go On
+title: Enough Is Enough...
 description: 'I want to use this platform (with no one on it) to not only share what''s
   going on with the current state of our country and the world as we know it. But
   also maybe we can talk shit and share a few laughs while we are at it. '
 video_url: ''
 author: Scottie Forchette
-date: 2020-06-05T00:00:00-04:00
+date: 2020-06-05T00:00:00.000-04:00
 hero_image: "/src/assets/content/images/blm_logo.jpg"
 
 ---
