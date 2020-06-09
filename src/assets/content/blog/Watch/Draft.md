@@ -2,7 +2,7 @@
 location: Content
 tag: TRENDING
 featured: true
-title: Enough Is Enough..
+title: Enough Is Enough...
 description: 'I want to use this platform (with no one on it) to not only share what''s
   going on with the current state of our country and the world as we know it. But
   also maybe we can talk shit and share a few laughs while we are at it. '
