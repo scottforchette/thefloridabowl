@@ -11,7 +11,7 @@ date: 2020-06-10T00:00:00-04:00
 hero_image: "/src/assets/content/images/screen-shot-2020-06-10-at-4-15-49-pm.png"
 
 ---
-As of recent, Clemson Football has been under fire for a comment an assistant coach made over 3 years ago. To no surprise this resurfaces during a tough time that our country is going through right now. But thats okay, It is expected.
+as of recent, Clemson Football has been under fire for a comment an assistant coach made over 3 years ago. To no surprise this resurfaces during a tough time that our country is going through right now. But thats okay, It is expected.
 
 See When an elite program is consistently on top and doing nothing but winning for past 10 years, it's normal for the masses to try to tear you down at all cost. Accusing us of cheating for years; and now they want to slap a racist label on us.
 
