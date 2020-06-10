@@ -5,7 +5,7 @@ featured: true
 title: Dabo Swinney For President 2020 / RIP Jalen Rose
 description: 'As of recent, Clemson Football has been under fire for a comment an
   assistant coach made over 3 years ago. '
-video_url: https://www.youtube.com/watch?v=onWPMwXaR10
+video_url: Dabo Swinney defends himself and Clemson amid criticism.mp4
 author: Scottie Forchette
 date: 2020-06-10T00:00:00-04:00
 hero_image: "/src/assets/content/images/screen-shot-2020-06-10-at-4-15-49-pm.png"
