@@ -15,7 +15,7 @@ As of recent, Clemson Football has been under fire for a comment an assistant co
 
 See When an elite program is consistently on top and doing nothing but winning for past 10 years, it's normal for the masses to try to tear you down at all cost. Accusing us of cheating for years; and now they want to slap a racist label on us.
 
-But unfortunately for all the haters and all you LOSERS who never won anything (aka Jalen Rose), our powerhouse was built brick by brick on the back of strong leadership, faith from the man upstairs, and big ole pair of brass balls unlike the sorry pair Jalen Rose has tucked away somewhere after being stepped on all over by Kobe that night in LA.
+But unfortunately for all the haters and all you **LOSERS** who never won anything (aka Jalen Rose); our powerhouse was built brick by brick on the back of strong leadership, faith from the man upstairs, and big ole pair of brass balls unlike the sorry pair Jalen Rose has tucked away somewhere after being stepped on all over by Kobe that night in LA.
 
 Jalen went on ESPN and said "I was paying attention, I was keeping score" about the the comments Dabo made back in 2016, when asked about not letting players kneel for the national anthem.
 
