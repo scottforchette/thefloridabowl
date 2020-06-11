@@ -15,7 +15,7 @@ As of recent, Clemson Football has been under fire for a comment an assistant co
 
 See When an elite program is consistently on top and doing nothing but winning for past 10 years, it's normal for the masses to try to tear you down at all cost. Accusing us of cheating, and now they want to slap a racist label on us.
 
-But unfortunately for all the haters and all you **LOSERS** who never won anything (aka Jalen Rose); our powerhouse was built brick by brick on the back of strong leadership, faith from the man upstairs, and by a guy with a big ole pair of brass balls named Dabo Swinney. Unlike the sorry pair Jalen Rose has tucked away somewhere. Jalen Rose has not watched one single Clemson football. Ever. If he has, he would know how much Dabo is respected and how well known he is for helping out the black community.  
+But unfortunately for all the haters and all you **LOSERS** who never won anything (aka Jalen Rose); our powerhouse was built brick by brick on the back of strong leadership, faith from the man upstairs, and by a guy with a big ole pair of brass balls named Dabo Swinney. Unlike the sorry pair Jalen Rose has tucked away somewhere. Jalen Rose has not watched one single Clemson football game. Ever. If he has, he would know how much Dabo is respected and how well known he is for helping out the black community.  
   
 Jalen went on ESPN and said "I was paying attention, I was keeping score" about the the comments Dabo made back in 2016, when asked about not letting players kneel for the national anthem.
 
