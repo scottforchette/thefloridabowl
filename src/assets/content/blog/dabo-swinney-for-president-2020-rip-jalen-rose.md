@@ -2,13 +2,13 @@
 location: Content
 tag: TRENDING
 featured: true
-title: Dabo Swinney For President 2020 / RIP Jalen Rose
+title: Dabo Swinney Is Not Racist / R.I.P Jalen Rose
 description: 'As of recent, Clemson Football has been under fire for a comment an
   assistant coach made over 3 years ago. '
 video_url: https://res.cloudinary.com/the-florida-bowl/video/upload/v1591826191/TFB/Dabo_Swinney_defends_himself_and_Clemson_amid_criticism_nxf2nr.mp4
 author: Scottie Forchette
 date: 2020-06-10T00:00:00-04:00
-hero_image: "/src/assets/content/images/screen-shot-2020-06-10-at-4-15-49-pm.png"
+hero_image: "/src/assets/content/images/screen-shot-2020-06-10-at-11-35-39-pm.png"
 
 ---
 As of recent, Clemson Football has been under fire for a comment an assistant coach made over 3 years ago. To no surprise this resurfaces during a tough time that our country is going through right now. But thats okay, It is expected.
