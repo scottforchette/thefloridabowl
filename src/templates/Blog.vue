@@ -2,9 +2,9 @@
   <Layout>
     <article id="post">
       <header id="post-0">
-        <div id="post-0-wrap" v-if="$page.post.video">
+        <div id="post-0-wrap" v-if="$page.post.video_url">
           <div id="post-0-1">
-            <video :src="$page.post.video" controls/> 
+            <video :src="$page.post.video_url" controls />
           </div>
         </div>
         <div id="post-0-2">
@@ -216,7 +216,7 @@ query getPostData ($path: String!) {
 
 @media (max-width: 500px) {
   #post-0 {
-    margin: 10vw 0 0; 
+    margin: 10vw 0 0;
   }
 
   #post-1-share {
@@ -262,6 +262,7 @@ query getPostData ($path: String!) {
   height: 50vw;
   width: 100%;
   overflow: hidden;
+  margin: 0 0 6vw;
 }
 
 #post-0-1 {
@@ -269,7 +270,7 @@ query getPostData ($path: String!) {
   top: 0;
   right: 0;
   left: 0;
-  bottom: 0; 
+  bottom: 0;
   video {
     position: absolute;
     height: 100%;
@@ -279,7 +280,6 @@ query getPostData ($path: String!) {
 }
 
 #post-0-2 {
-  margin: 6vw 0 0;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -298,6 +298,6 @@ query getPostData ($path: String!) {
 }
 
 .headline {
-  line-height: 1.2;
+  line-height: 1.4;
 }
 </style>
