@@ -50,7 +50,7 @@ query Blog($page: Int) {
                 author
                 path
                 hero_image (quality: 80)
-                date  (format: "DD.YY")
+                date  (format: "MM.DD")
 			}
 		}
 	}
