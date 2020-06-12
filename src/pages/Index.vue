@@ -70,7 +70,7 @@ export default {
                 author
                 path
                 hero_image (quality: 80)
-                date  (format: "DD.YY")
+                date  (format: "MM.DD")
             } 
         }
     }
@@ -86,7 +86,7 @@ export default {
                 author
                 path
                 hero_image (quality: 80)
-                date  (format: "DD.YY")
+                date  (format: "MM.DD")
             } 
         }
     }
@@ -102,7 +102,7 @@ export default {
                 author
                 path
                 hero_image (quality: 80)
-                date  (format: "DD.YY")
+                date  (format: "MM.DD")
             } 
         }
     }
@@ -118,7 +118,7 @@ export default {
                 author
                 path
                 hero_image (quality: 80)
-                date  (format: "DD.YY")
+                date  (format: "MM.DD")
             } 
         }
     }
@@ -135,7 +135,7 @@ export default {
                 author
                 path
                 hero_image (quality: 80)
-                date  (format: "DD.YY")
+                date  (format: "MM.DD")
             } 
         }
     } 
