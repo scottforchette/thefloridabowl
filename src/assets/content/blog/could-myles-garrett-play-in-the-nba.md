@@ -1,5 +1,5 @@
 ---
-location: Featured
+location: Content
 tag: TRENDING
 featured: true
 title: Could Myles Garrett Play In The NBA?
