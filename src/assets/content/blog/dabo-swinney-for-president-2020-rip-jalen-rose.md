@@ -11,9 +11,7 @@ date: 2020-06-10T00:00:00-04:00
 hero_image: "/src/assets/content/images/screen-shot-2020-06-10-at-11-35-39-pm.png"
 
 ---
-As of recent, Clemson Football has been under fire for a comment an assistant coach made over 3 years ago. To no surprise this resurfaces during a tough time that our country is going through right now. But thats okay, It is expected.
-
-See When an elite program is consistently on top and doing nothing but winning for past 10 years, it's normal for the masses to try to tear you down at all cost. Accusing us of cheating, and now they want to slap a racist label on us.
+ When an elite program is consistently on top and doing nothing but winning for past 10 years, it's normal for everyone to try and tear you down at any cost. Accusing us of cheating, now they want to slap a racist label on us.
 
 But unfortunately for all the haters and all you **LOSERS** who never won anything (aka Jalen Rose); our powerhouse was built brick by brick on the back of strong leadership, faith from the man upstairs, and by a guy with a big ole pair of brass balls named Dabo Swinney. Unlike the sorry pair Jalen Rose has tucked away somewhere. Jalen Rose has not watched one single Clemson football game. Ever. If he has, he would know how much Dabo is respected and how well known he is for helping out the black community.  
   
