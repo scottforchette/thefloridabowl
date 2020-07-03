@@ -1,5 +1,5 @@
 ---
-location: Content
+location: Latest
 tag: TRENDING
 featured: true
 title: Enough Is Enough...

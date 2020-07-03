@@ -7,17 +7,7 @@
         <Footer />
       </div>
     </main>
-    <div id="menu">
-      <div id="menu-bg"></div>
-      <ul>
-        <li>
-          <g-link class="menu-li" to="/blog">Blog</g-link>
-        </li>
-        <li>
-          <g-link class="menu-li" to="/contact">Contact</g-link>
-        </li>
-      </ul>
-    </div>
+    
     <div id="issue">Please turn your device.</div> 
   </div>
 </template>

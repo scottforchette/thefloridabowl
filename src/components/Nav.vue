@@ -1,5 +1,16 @@
 <template>
   <nav id="nav">
+    <div id="menu">
+      <div id="menu-bg"></div>
+      <ul>
+        <li>
+          <g-link class="menu-li" to="/blog">Blog</g-link>
+        </li>
+        <li>
+          <g-link class="menu-li" to="/contact">Contact</g-link>
+        </li>
+      </ul>
+    </div>
     <div class="_line"></div>
     <ul>
       <li class="_nav-li">
@@ -120,9 +131,9 @@ export default {
 
 <style lang="scss">
 #nav-toggle {
-  position: fixed;
+  position: absolute;
   top: 0;
-  right: 0.5vw;
+  right: -3vw;
   height: 12.17778vw;
   width: 12.17778vw;
 
@@ -134,7 +145,7 @@ export default {
 }
 
 #nav {
-  position: absolute;
+  position: fixed;
   top: 2vw;
   left: 3.25vw;
   width: 93.5vw;
@@ -143,7 +154,7 @@ export default {
 
   > ul {
     display: flex;
-
+  position: relative;
     li {
       overflow: hidden;
     }
@@ -202,8 +213,7 @@ export default {
   cursor: pointer;
 }
 
-#nav-toggle {
-  z-index: 10000;
+#nav-toggle { 
   svg {
     transition: fill 0.6s;
 
@@ -212,6 +222,7 @@ export default {
 }
 
 #nav-logo {
+  z-index: 100;
   @media (min-width: 501px) {
     width: 12vw;
   }
