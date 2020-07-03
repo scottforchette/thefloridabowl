@@ -16,7 +16,7 @@
           <g-link class="menu-li" to="/contact">Contact</g-link>
         </li>
       </ul>
-    </div>
+    </div> 
     <Nav />
     <div id="issue">Please turn your device.</div>
   </div>

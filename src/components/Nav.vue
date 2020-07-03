@@ -121,7 +121,7 @@ export default {
 
 <style lang="scss">
 #nav-toggle {
-  position: absolute;
+  position: fixed;
   top: 0;
   right: -3vw;
   height: 12.17778vw;
@@ -135,7 +135,7 @@ export default {
 }
 
 #nav {
-  position: fixed;
+  position: absolute;
   top: 2vw;
   left: 3.25vw;
   width: 93.5vw;
@@ -205,7 +205,7 @@ export default {
 
 #nav-toggle { 
     z-index: 100;
-
+right: .5vw;
   svg {
     transition: fill 0.6s;
 
