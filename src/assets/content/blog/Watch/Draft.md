@@ -1,7 +1,7 @@
 ---
-location: Content
+location: Latest
 tag: TRENDING
-featured: true
+featured: false
 title: Enough Is Enough...
 description: 'I want to use this platform (with no one on it) to not only share what''s
   going on with the current state of our country and the world as we know it. But
