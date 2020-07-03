@@ -1,32 +1,37 @@
 <template>
   <nav id="nav">
-    <div id="menu">
-      <div id="menu-bg"></div>
-      <ul>
-        <li>
-          <g-link class="menu-li" to="/blog">Blog</g-link>
-        </li>
-        <li>
-          <g-link class="menu-li" to="/contact">Contact</g-link>
-        </li>
-        <li @click.prevent="toggleMode" class="h">
-            <div class="menu-li">Mode</div> 
-          </li>
-      </ul>
-    </div>
-    <div id="nav-wrap">
-      <g-link to="/" id="nav-logo">
-      <g-image v-if="mode" src="~/assets/img/logo/dark.png" alt="The Florida Bowl" />
+     <g-link to="/" id="nav-logo">
+              <g-image v-if="mode" src="~/assets/img/logo/dark.png" alt="The Florida Bowl" />
 
-      <g-image v-else src="~/assets/img/logo/light.png" alt="The Florida Bowl" />
-    </g-link> 
+              <g-image v-else src="~/assets/img/logo/light.png" alt="The Florida Bowl" />
+            </g-link>
+    <ul>
+      <li class="_nav-li">
+        <ul>
+          <li>
+           
+          </li>
+        </ul>
+      </li>
+      <li class="_nav-li">
+        <ul>
+          <li @click.prevent="toggleMode" class="h">
+            <div v-if="mode">LIGHT MODE</div>
+            <div v-else>DARK MODE</div>
+          </li>
+          <li>
+            <g-link to="/blog">BLOG</g-link>
+          </li>
+        </ul>
+      </li>
+    </ul>
     <div id="nav-toggle" class="h">
       <svg viewBox="0 0 182 112">
         <rect x="42" y="42" width="98" height="4" />
         <rect x="42" y="66" width="98" height="4" />
       </svg>
     </div>
-    </div>
+    <div class="_line"></div>
     
   </nav>
 </template>
@@ -116,8 +121,10 @@ export default {
 </script>
 
 <style lang="scss">
-#nav-toggle { 
-  top: 0; 
+#nav-toggle {
+  position: fixed;
+  top: 0;
+  right: -3vw;
   height: 12.17778vw;
   width: 12.17778vw;
 
@@ -128,22 +135,16 @@ export default {
   }
 }
 
-#nav-wrap {
-  display: flex;
-  background: #fff;
-  justify-content: space-between;
-}
-
 #nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
+  position: absolute;
+  top: 2vw;
+  left: 3.25vw;
+  width: 93.5vw; 
   z-index: 1;
 
   > ul {
     display: flex;
-    position: relative;
+  position: relative;
     li {
       overflow: hidden;
     }
@@ -168,6 +169,7 @@ export default {
   &:first-child {
     width: 26.35vw;
     margin: 0 2vw 0 0;
+ 
   }
 
   &:last-child {
@@ -201,9 +203,9 @@ export default {
   cursor: pointer;
 }
 
-#nav-toggle {
-  z-index: 100;
-  right: 0.5vw;
+#nav-toggle { 
+    z-index: 100;
+right: .5vw;
   svg {
     transition: fill 0.6s;
 
@@ -212,15 +214,17 @@ export default {
 }
 
 #nav-logo {
-  z-index: 100; 
-      padding: 0 0 0 2.5vw;
-
+  z-index: 100;
+  position: fixed;
+  top: 0;
   @media (min-width: 501px) {
     width: 12vw;
   }
 
   @media (max-width: 500px) {
-    width: 24vw; 
+    width: 24vw;
+    padding: 0 0 5vw;
+
   }
 }
 </style>

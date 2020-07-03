@@ -205,9 +205,9 @@ export default {
 #alt-logo {
   position: absolute;
   left: 49vw;
-  top: 0vw;
-  height: 10vw;
-  width: 10vw;
+  top: -4vw;
+  height: 20vw;
+  width: 20vw;
 }
 
 #b-1 {
