@@ -76,7 +76,7 @@ export default {
             } 
         }
     }
-    latest: allBlog(filter: { location: { in: ["Latest"] }}) {
+    latest: allBlog(filter: { location: { in: ["Latest"] }, featured: { ne: true }}) {
         edges {
             node {
                 id
