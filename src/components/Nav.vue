@@ -116,8 +116,7 @@ export default {
 </script>
 
 <style lang="scss">
-#nav-toggle { 
-  top: 0; 
+#nav-toggle {  
   height: 12.17778vw;
   width: 12.17778vw;
 
@@ -129,9 +128,15 @@ export default {
 }
 
 #nav-wrap {
-  display: flex;
-  background: #fff;
+  display: flex; 
+  background: var(--body-b-color); 
+    transition: background 0.6s;
   justify-content: space-between;
+}
+
+#menu-bg {
+      transition: background 0.6s;
+
 }
 
 #nav {
@@ -147,11 +152,7 @@ export default {
     li {
       overflow: hidden;
     }
-  }
-
-  @media (max-width: 500px) {
-    overflow: auto;
-  }
+  } 
 
   ul li:last-child {
     li {
@@ -202,8 +203,7 @@ export default {
 }
 
 #nav-toggle {
-  z-index: 100;
-  right: 0.5vw;
+  z-index: 100; 
   svg {
     transition: fill 0.6s;
 
