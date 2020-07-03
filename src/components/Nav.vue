@@ -215,6 +215,8 @@ right: .5vw;
 
 #nav-logo {
   z-index: 100;
+  position: fixed;
+  
   @media (min-width: 501px) {
     width: 12vw;
   }
