@@ -4,11 +4,12 @@ hide_body: false
 fields:
 - name: location
   type: select
-  default: Content
+  default: Latest
   config:
     required: true
     options:
     - Featured
+    - Latest
     source:
       type: simple
       section: 
