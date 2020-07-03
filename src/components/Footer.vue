@@ -43,7 +43,8 @@
     display: table;
   }
 
-  > div, ul {
+  > div,
+  ul {
     display: flex;
   }
 
@@ -68,9 +69,10 @@
     margin: 20vw 0 0;
     height: 50vw;
     flex-direction: column;
-> div, ul {
-    margin: 5vw 0;
-  }
+    > div,
+    ul {
+      margin: 5vw 0;
+    }
 
     ul {
       li {

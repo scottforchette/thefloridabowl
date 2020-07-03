@@ -1,16 +1,6 @@
 <template>
   <nav id="nav">
-    <div id="menu">
-      <div id="menu-bg"></div>
-      <ul>
-        <li>
-          <g-link class="menu-li" to="/blog">Blog</g-link>
-        </li>
-        <li>
-          <g-link class="menu-li" to="/contact">Contact</g-link>
-        </li>
-      </ul>
-    </div>
+    
     <div class="_line"></div>
     <ul>
       <li class="_nav-li">
@@ -214,6 +204,8 @@ export default {
 }
 
 #nav-toggle { 
+    z-index: 100;
+
   svg {
     transition: fill 0.6s;
 

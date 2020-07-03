@@ -1,14 +1,24 @@
 <template>
   <div id="app">
     <main id="main">
-      <Nav />
       <div id="page">
         <slot />
         <Footer />
       </div>
     </main>
-    
-    <div id="issue">Please turn your device.</div> 
+    <div id="menu">
+      <div id="menu-bg"></div>
+      <ul>
+        <li>
+          <g-link class="menu-li" to="/blog">Blog</g-link>
+        </li>
+        <li>
+          <g-link class="menu-li" to="/contact">Contact</g-link>
+        </li>
+      </ul>
+    </div>
+    <Nav />
+    <div id="issue">Please turn your device.</div>
   </div>
 </template>
 
@@ -21,7 +31,7 @@ export default {
   components: {
     Nav,
     Footer
-  } 
+  }
 };
 </script> 
 
@@ -203,10 +213,10 @@ html {
 
 #menu {
   position: fixed;
-  top: 0;
   left: 0;
-  height: 100%;
-  width: 100%;
+  top: 0;
+  height: 100vh;
+  width: 100vw;
   pointer-events: none;
 
   ul {
