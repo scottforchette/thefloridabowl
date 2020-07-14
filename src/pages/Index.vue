@@ -5,7 +5,7 @@
         <div>Featured +</div>
       </div>
       <ul class="_latest-ul">
-        <li v-for="edge in $page.stories.edges" :key="edge.node.id">
+        <li v-for="edge in $page.featured.edges" :key="edge.node.id">
           <g-link class="_latest-img" :to="edge.node.path">
             <g-image :src="edge.node.hero_image" :alt="edge.node.title" />
             <div class="_latest-date">
@@ -20,11 +20,13 @@
     </div>
     <div id="brand" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
       <div id="b-0">THE LATEST</div>
-     
+      <div id="alt-logo">
+        <g-image src="~/assets/img/logo/alt-light.png" alt="The Florida Bowl" />
+      </div>
     </div>
     <div id="all" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
       <ul class="_latest-ul">
-        <li v-for="edge in $page.content.edges" :key="edge.node.id">
+        <li v-for="edge in $page.latest.edges" :key="edge.node.id">
           <g-link class="_latest-img" :to="edge.node.path">
             <g-image :src="edge.node.hero_image" :alt="edge.node.title" />
             <div class="_latest-date">
@@ -58,7 +60,7 @@ export default {
 
 <page-query>
  {  
-    latest: allBlog(limit: 2, filter: { location: { in: ["Content"] }, featured: { eq: true }}) {
+    featured: allBlog(limit: 2, filter: {  featured: { eq: true }}) {
         edges {
             node {
                 id
@@ -70,11 +72,11 @@ export default {
                 author
                 path
                 hero_image (quality: 80)
-                date  (format: "DD.YY")
+                date  (format: "MM.DD")
             } 
         }
     }
-    content: allBlog(filter: { location: { in: ["Content"] }, featured: { ne: true }}) {
+    latest: allBlog(filter: { location: { in: ["Latest"] }, featured: { ne: true }}) {
         edges {
             node {
                 id
@@ -86,56 +88,7 @@ export default {
                 author
                 path
                 hero_image (quality: 80)
-                date  (format: "DD.YY")
-            } 
-        }
-    }
-    topstory: allBlog(limit: 1,filter: { location: { in: ["Stories"] }, featured: { eq: true }}) {
-        edges {
-            node {
-                id
-                location
-                featured
-                path
-                title
-                tag
-                author
-                path
-                hero_image (quality: 80)
-                date  (format: "DD.YY")
-            } 
-        }
-    }
-    stories: allBlog(limit: 2, filter: { location: { in: ["Stories"] }, featured: { ne: true }}) {
-        edges {
-            node {
-                id
-                location
-                featured
-                path
-                title
-                tag
-                author
-                path
-                hero_image (quality: 80)
-                date  (format: "DD.YY")
-            } 
-        }
-    }
-    watch: allBlog(limit: 4, filter: { 
-      location: { in: ["Watch"] }}) {
-        edges {
-            node {
-                id
-                path
-                title
-                tag
-                featured
-                location
-                author
-                path
-                hero_image (quality: 80)
-                date  (format: "DD.YY")
+                date  (format: "MM.DD")
             } 
         }
     } 
@@ -246,7 +199,15 @@ export default {
   line-height: 5.25vw;
   width: 41vw;
   opacity: 0.1;
-  text-align: center; 
+  text-align: center;
+}
+
+#alt-logo {
+  position: absolute;
+  left: 49vw;
+  top: -4vw;
+  height: 20vw;
+  width: 20vw;
 }
 
 #b-1 {
@@ -266,16 +227,14 @@ export default {
       margin: 0vw 25vw 0 0;
     }
   }
- 
 }
 
 ._sm {
   font-size: 1.6vw;
 
   @media (max-width: 500px) {
-         font-size: 5vw;
-
-      }
+    font-size: 5vw;
+  }
 }
 
 #all {

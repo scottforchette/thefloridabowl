@@ -4,14 +4,12 @@ hide_body: false
 fields:
 - name: location
   type: select
-  default: Content
+  default: Latest
   config:
     required: true
     options:
-    - Watch
     - Featured
-    - Stories
-    - Content
+    - Latest
     source:
       type: simple
       section: 
@@ -77,17 +75,7 @@ fields:
   name: hero_image
   label: Cover
 pages:
-- src/assets/content/blog/an-essay-on-walking.md
-- src/assets/content/blog/bring-back-brady-right-barnwell-predicts-five-moves-for-each-afc-east-team-1.md
-- src/assets/content/blog/bring-back-brady-right-barnwell-predicts-five-moves-for-each-afc-east-team-2.md
-- src/assets/content/blog/bring-back-brady-right-barnwell-predicts-five-moves-for-each-afc-east-team.md
-- src/assets/content/blog/nathaniel-wood-is-ready-to-turn-it-up.md
-- src/assets/content/blog/ne-te-quaesiveris-extra.md
-- src/assets/content/blog/on-the-geneology-of-morals.md
-- src/assets/content/blog/song-of-myself.md
-- src/assets/content/blog/sunflower-sutra.md
-- src/assets/content/blog/team-giannis-and-team-lebron-go-back-and-forth-in-epic-fourth-quarter-1.md
-- src/assets/content/blog/team-giannis-and-team-lebron-go-back-and-forth-in-epic-fourth-quarter.md
-- src/assets/content/blog/what-s-the-score-some-ufc-fighters-want-to-know-after-each-round-1.md
-- src/assets/content/blog/what-s-the-score-some-ufc-fighters-want-to-know-after-each-round-2.md
-- src/assets/content/blog/what-s-the-score-some-ufc-fighters-want-to-know-after-each-round.md
+- src/assets/content/blog/Watch/Draft.md
+- src/assets/content/blog/could-myles-garrett-play-in-the-nba.md
+- src/assets/content/blog/dabo-swinney-for-president-2020-rip-jalen-rose.md
+- src/assets/content/blog/tyreek-hill-gets-mossed-by-high-school-player.md

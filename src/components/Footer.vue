@@ -16,22 +16,36 @@
         </svg>
       </a>
     </div>
+
+    <ul>
+      <li>
+        <g-link to="/terms">Terms of Use</g-link>
+      </li>
+      <li>
+        <g-link to="/privacy">Privacy Policy</g-link>
+      </li>
+      <li>
+        <g-link to="/dmca">DMCA</g-link>
+      </li>
+    </ul>
   </footer>
 </template> 
 
 <style lang="scss">
 #footer {
+  color: #fff;
   background: #000;
-
-  > div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
-  }
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
   a {
     display: table;
+  }
+
+  > div,
+  ul {
+    display: flex;
   }
 
   @media (min-width: 501px) {
@@ -43,11 +57,28 @@
       width: 3vw;
       height: 3vw;
     }
+
+    ul {
+      li {
+        margin: 0 3vw;
+      }
+    }
   }
 
   @media (max-width: 500px) {
     margin: 20vw 0 0;
-    height: 20vw;
+    height: 50vw;
+    flex-direction: column;
+    > div,
+    ul {
+      margin: 5vw 0;
+    }
+
+    ul {
+      li {
+        margin: 0 3vw;
+      }
+    }
 
     ._svg {
       margin: 0 4vw;
