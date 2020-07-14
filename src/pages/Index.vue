@@ -19,7 +19,7 @@
       </ul>
     </div>
     <div id="brand" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1000">
-      <div id="b-0">THE LATEST</div>
+      <div id="b-0">For The People. By The People.</div>
       <div id="alt-logo">
         <g-image src="~/assets/img/logo/alt-light.png" alt="The Florida Bowl" />
       </div>
