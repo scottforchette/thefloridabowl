@@ -4,7 +4,7 @@
       <header id="post-0">
         <div id="post-0-wrap">
           <div id="post-0-1">
-            <video :src="$page.post.video" controls></video>
+            <video :src="$page.post.video" controls autoplay></video>
           </div>
         </div>
         <div id="post-0-2">
