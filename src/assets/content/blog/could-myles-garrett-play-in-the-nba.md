@@ -1,7 +1,7 @@
 ---
 location: Latest
 tag: TRENDING
-featured: true
+featured: false
 title: Could Myles Garrett Play In The NBA?
 description: 'This isn''t the first time a video of Myles Garrett has surfaced of
   him playing pick up basketball. However, this is the first time we have gotten to

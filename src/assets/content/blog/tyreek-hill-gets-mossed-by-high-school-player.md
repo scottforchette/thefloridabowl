@@ -1,7 +1,7 @@
 ---
 location: Latest
 tag: NFL
-featured: false
+featured: true
 title: Tyreek Hill Gets Mossed By High School Player
 description: ''
 video_url: https://res.cloudinary.com/the-florida-bowl/video/upload/v1594685909/TFB/2020_Tyreek_Hill_Gets_Burnt_By_High_Schooler_zpqh4x.mp4
