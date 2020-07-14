@@ -4,7 +4,7 @@
       <header id="post-0">
         <div id="post-0-wrap" v-if="$page.post.video_url">
           <div id="post-0-1">
-            <video :src="$page.post.video" controls autoplay></video>
+            <video :src="$page.post.video_url" controls autoplay/>
           </div>
         </div>
         <div id="post-0-2">
