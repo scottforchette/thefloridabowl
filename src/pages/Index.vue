@@ -206,8 +206,8 @@ export default {
   position: absolute;
   left: 49vw;
   top: -4vw;
-  height: 20vw;
-  width: 20vw;
+  height: 40vw;
+  width: 40vw;
 }
 
 #b-1 {
