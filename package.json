@@ -24,7 +24,7 @@
   "devDependencies": {
     "@gridsome/plugin-sitemap": "^0.2.3",
     "netlify-plugin-gridsome-cache": "^1.0.2",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "sass-loader": "^8.0.2"
   }
 }
